@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@keyframes fade-in-first {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-second {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-first {
+  animation: fade-in-first 0.5s ease-in-out forwards;
+}
+
+.animate-fade-in-second {
+  animation: fade-in-second 1.5s ease-in-out forwards;
+}

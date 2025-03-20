@@ -1,14 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import NavBar from "../components/NavBar.astro";
+import "../styles/index.css";
+
+const { title, description, image = '/favicon.ico' } = Astro.props;
+---
+
+
 <!doctype html>
-<html lang="en">
+<html lang="en" style={{ colorScheme: "dark" }} class="bg-indigo-950">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>v1ris</title>
+		<BaseHead title={title} description={description} />
 	</head>
-	<body>
-		<slot />
+	<body class="flex flex-col px-96">
+		<div class="w-full">
+			<NavBar></NavBar>
+			<slot/>
+		</div>
+		
 	</body>
 </html>
 
