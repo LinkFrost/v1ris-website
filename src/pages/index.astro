@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Divider from '../components/design/Divider.astro';
 
 ---
 
@@ -13,7 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <p class="text-9xl w-full text-center py-40 bg-black">DEMO REEL</p>
       </section>
 
-      <hr class="border-indigo-900"/>
+      <hr class="border-b-2 border-indigo-900"/>
 
       <section class="flex gap-24 animate-fade-in-second">
         <img class="rounded-full border-white border-2 transition-opacity ease-in-out" width="300px" src="img/headshot.png" alt="v1ris headshot"/>
@@ -25,7 +26,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </div>
       </section>
 
-      <hr class="border-indigo-900"/>
+      <Divider/>
 
       <section class="flex gap-4 flex-col">
         <p class="text-4xl font-semibold">New Releases</p>
@@ -34,7 +35,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </p>
       </section>
 
-      <hr class="border-indigo-900"/>
+      <Divider/>
 
       <section class="flex gap-4 flex-col">
         <p class="text-4xl font-semibold">Testimonials</p>

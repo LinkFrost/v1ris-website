@@ -1,23 +1,26 @@
 ---
+import Divider from './design/Divider.astro';
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
-  <nav class="w-full justify-between items-center flex text-xl py-4 animate-fade-in-first border-b-2 border-indigo-900">
-      <div class="flex gap-12 ">
-        <HeaderLink href="/">Home</HeaderLink>
-        <HeaderLink href="/projects">Projects</HeaderLink>
-        <HeaderLink href="/violin-demo-reel">Violin Demo Reel</HeaderLink>
-        <HeaderLink href="/about">About</HeaderLink>
-        <HeaderLink href="/contact">Contact</HeaderLink>
-      </div>
-      
-      <div class="flex gap-4">
-        <img src="svg/soundcloud.svg"/>
-        <img src="svg/spotify.svg"/>
-        <img src="svg/bandcamp.svg"/>
-        <img src="svg/bluesky.svg"/>
-        <img src="svg/instagram.svg"/>
-      </div>
+  <nav class="w-full justify-between items-center flex text-xl py-4 animate-fade-in-first border-indigo-900">
+    <div class="flex gap-12 ">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/projects">Projects</HeaderLink>
+      <HeaderLink href="/violin-demo-reel">Violin Demo Reel</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/contact">Contact</HeaderLink>
+    </div>
+    
+    <div class="flex gap-4">
+      <img src="svg/soundcloud.svg"/>
+      <img src="svg/spotify.svg"/>
+      <img src="svg/bandcamp.svg"/>
+      <img src="svg/bluesky.svg"/>
+      <img src="svg/instagram.svg"/>
+    </div>
   </nav>
+
+  <Divider/>
 </header>
