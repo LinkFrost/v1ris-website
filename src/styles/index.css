@@ -25,3 +25,13 @@
 .animate-fade-in-second {
   animation: fade-in-second 1.5s ease-in-out forwards;
 }
+
+@font-face {
+  font-family: "Sanchez";
+  src: url("/fonts/Sanchez-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("/fonts/IBMPlexMono-Medium.ttf") format("ttf");
+}

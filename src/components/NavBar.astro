@@ -1,6 +1,13 @@
 ---
 import Divider from './design/Divider.astro';
 import HeaderLink from './HeaderLink.astro';
+import Soundcloud from "../../public/svg/soundcloud.svg"
+import Spotify from "../../public/svg/spotify.svg"
+import BandCamp from "../../public/svg/bandcamp.svg"
+import BlueSky from "../../public/svg/bluesky.svg"
+import Instagram from "../../public/svg/instagram.svg"
+
+const color = "#a3b3ff"
 ---
 
 <header>
@@ -15,23 +22,23 @@ import HeaderLink from './HeaderLink.astro';
     
     <div class="flex gap-4">
       <a class="hover:scale-125" href="https://soundcloud.com/v1ris">
-        <img src="svg/soundcloud.svg"/>
+         <Soundcloud fill={color}/>
       </a>
 
       <a class="hover:scale-125" href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH">
-        <img src="svg/spotify.svg"/>
+        <Spotify fill={color}/>
       </a>
 
       <a class="hover:scale-125" href="https://v1ris.bandcamp.com/album/bury-yourself">
-        <img src="svg/bandcamp.svg"/>
+        <BandCamp fill={color}/>
       </a>
 
       <a class="hover:scale-125" href="https://bsky.app/profile/v1ris.com">
-        <img src="svg/bluesky.svg"/>
+        <BlueSky fill={color}/>
       </a>
 
       <a class="hover:scale-125" href="https://www.instagram.com/v1ris_music/">
-        <img src="svg/instagram.svg"/>
+        <Instagram fill={color}/>
       </a>
     </div>
   </nav>
