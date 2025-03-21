@@ -3,30 +3,21 @@ import BaseHead from "../components/BaseHead.astro";
 import NavBar from "../components/NavBar.astro";
 import "../styles/index.css";
 
-const { title, description, image = '/favicon.ico' } = Astro.props;
+const { title, description, image = '/favicon.ico', restrictWidth } = Astro.props;
 ---
-
 
 <!doctype html>
 <html lang="en" style={{ colorScheme: "" }} class="bg-indigo-300 text-black text-base">
 	<head>
 		<BaseHead title={title} description={description} />
 	</head>
-	<body class="flex flex-col font-[IBMPlexMono]">
-	<!-- <body class="flex flex-col font-[Sanchez]"> -->
-		<div class="w-full">
-			<NavBar></NavBar>
-			<slot/>
+	<body>
+		<div>
+			<NavBar/>
+
+			<div class={`w-full flex flex-col items-center justify-center font-sanchez ${restrictWidth ? "restrictWidthScreen" : ""} mx-auto pt-4`}>
+				<slot/>
+			</div>
 		</div>
-		
 	</body>
 </html>
-
-<!-- <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style> -->

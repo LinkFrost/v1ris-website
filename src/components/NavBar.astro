@@ -7,12 +7,12 @@ import BandCamp from "../../public/svg/bandcamp.svg"
 import BlueSky from "../../public/svg/bluesky.svg"
 import Instagram from "../../public/svg/instagram.svg"
 
-const color = "#a3b3ff"
+const svgColor = "#a3b3ff"
 ---
 
-<header class="pb-4">
-  <nav class="w-full justify-between items-center flex text-xl py-8 animate-fade-in-first border-indigo-900 px-96 bg-black">
-    <div class="flex gap-12 ">
+<header class="flex items-center justify-center bg-black">
+  <nav class="w-full justify-between items-center flex text-xl py-8 animate-fade-in-first border-indigo-900 px-8 sm:px-12 sm:max-w-screen-lg">
+    <div class="flex gap-10">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
       <HeaderLink href="/violin-demo-reel">Violin Demo Reel</HeaderLink>
@@ -22,23 +22,23 @@ const color = "#a3b3ff"
     
     <div class="flex gap-4">
       <a class="hover:scale-125" href="https://soundcloud.com/v1ris">
-         <Soundcloud fill={color}/>
+         <Soundcloud fill={svgColor}/>
       </a>
 
       <a class="hover:scale-125" href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH">
-        <Spotify fill={color}/>
+        <Spotify fill={svgColor}/>
       </a>
 
       <a class="hover:scale-125" href="https://v1ris.bandcamp.com/album/bury-yourself">
-        <BandCamp fill={color}/>
+        <BandCamp fill={svgColor}/>
       </a>
 
       <a class="hover:scale-125" href="https://bsky.app/profile/v1ris.com">
-        <BlueSky fill={color}/>
+        <BlueSky fill={svgColor}/>
       </a>
 
       <a class="hover:scale-125" href="https://www.instagram.com/v1ris_music/">
-        <Instagram fill={color}/>
+        <Instagram fill={svgColor}/>
       </a>
     </div>
   </nav>

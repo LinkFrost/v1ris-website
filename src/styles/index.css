@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.restrictWidthScreen {
+  @apply px-8 sm:px-12 sm:max-w-screen-lg m-auto;
+}
+
+.restrictWidthPadding {
+  @apply sm:max-w-screen-lg m-auto;
+}
+
 @keyframes fade-in-first {
   from {
     opacity: 0;
@@ -25,13 +33,35 @@
 .animate-fade-in-second {
   animation: fade-in-second 1.5s ease-in-out forwards;
 }
-
+/* 
 @font-face {
   font-family: "Sanchez";
-  src: url("/fonts/Sanchez-Regular.ttf") format("ttf");
+  src: url("/public/fonts/Sanchez-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "IBMPlexMono";
-  src: url("/fonts/IBMPlexMono-Medium.ttf") format("ttf");
+  src: url("/public/fonts/IBMPlexMono-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_18pt-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@theme {
+  --font-inter: "Inter", "sans-serrif";
+}
+
+@theme {
+  --font-sanchez: "Sanchez", "sans-serrif";
 }
