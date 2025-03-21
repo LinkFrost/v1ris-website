@@ -15,7 +15,7 @@ const { title, description, image = '/favicon.ico', restrictWidth } = Astro.prop
 		<div>
 			<NavBar/>
 
-			<div class={`w-full flex flex-col items-center justify-center font-sanchez ${restrictWidth ? "restrictWidthScreen" : ""} mx-auto pt-4`}>
+			<div class={`baseLayout ${restrictWidth ? "restrictWidthScreen" : ""}`}>
 				<slot/>
 			</div>
 		</div>
