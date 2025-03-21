@@ -7,41 +7,44 @@ import Divider from '../components/design/Divider.astro';
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main class="py-4">
-    <div class="flex flex-col gap-8">
-      <section class="flex flex-col gap-4 items-center justify-center animate-fade-in-first">
-        <p class="text-4xl font-semibold">Storytelling Through Sound</p>
-
-        <p class="text-9xl w-full text-center py-40 bg-black">DEMO REEL</p>
-      </section>
-
-      <hr class="border-b-2 border-indigo-900"/>
-
-      <section class="flex gap-24 animate-fade-in-second">
-        <img class="rounded-full border-white border-2 transition-opacity ease-in-out" width="300px" src="img/headshot.png" alt="v1ris headshot"/>
-
-        <div class="flex flex-col justify-between py-12">
-          <p class="text-xl"><span class="font-semibold text-4xl">v1ris</span> is a composer writing interactive music for narrative-driven games. She fuses her multi-instrumental and electronic background to write a wide variety of memorable music.</p>
-
-          <p class="text-2xl">Let's work together!</p>
+    <div class="flex flex-col">
+      <section class="pb-8">
+        <div class="flex flex-col gap-4 items-center justify-center animate-fade-in-first px-96 w-full">
+          <p class="text-4xl font-semibold decoration-double decoration-3 underline-offset-8 decoration-indigo-950 underline text-indigo-950">Storytelling Through Sound</p>
+          <p class="text-9xl w-full text-center py-40 bg-black text-white">DEMO REEL</p>
         </div>
       </section>
 
       <Divider/>
 
-      <section class="flex gap-4 flex-col">
-        <p class="text-4xl font-semibold">New Releases</p>
-
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec nisl ac diam varius venenatis non convallis enim. Nulla quam erat, imperdiet eget magna vitae, condimentum lobortis mi. Duis dignissim pharetra dui. Vivamus gravida libero non pellentesque eleifend. Nullam sit amet interdum quam. Curabitur lacus erat, pharetra ac mi consectetur, dictum lacinia leo. Quisque eget ligula at nunc ultrices pharetra sit amet in ex. Vivamus varius fermentum suscipit. Curabitur ultrices sit amet sem sit amet elementum. Proin hendrerit venenatis sapien, eu vestibulum neque molestie congue. Nam varius volutpat ornare. Mauris nec finibus risus. Fusce accumsan ac ex nec ultrices. Vivamus vitae pretium urna, ut cursus nibh. Quisque imperdiet ut lorem tristique hendrerit. Duis quis molestie velit. Phasellus rhoncus mattis ante, eget cursus massa maximus ut. Praesent placerat ipsum nunc, quis pretium nunc consequat et. Quisque sagittis pretium fermentum. Aliquam ac ex a urna mollis finibus. Proin lobortis pellentesque dapibus. Praesent id finibus nisi, eget tincidunt sapien. 
-        </p>
+      <section class="bg-white py-8" >
+        <div class="flex gap-24 animate-fade-in-second px-96">
+          <img class="rounded-full border-indigo-950 border-4 transition-opacity ease-in-out" width="300px" src="img/headshot.png" alt="v1ris headshot"/>
+          <div class="flex flex-col justify-between py-12">
+            <p class="text-xl"><span class="font-semibold text-4xl text-indigo-950">v1ris</span> is a composer writing interactive music for narrative-driven games. She fuses her multi-instrumental and electronic background to write a wide variety of memorable music.</p>
+            <a class="text-2xl hover:underline text-indigo-950" href="/contact">Let's work together!</p></a>
+          </div>
+        </div>
       </section>
 
       <Divider/>
 
-      <section class="flex gap-4 flex-col">
-        <p class="text-4xl font-semibold">Testimonials</p>
+      <section class="py-8">
+        <div class="flex gap-4 flex-col px-96">
+          <p class="text-4xl font-semibold text-indigo-950">New Releases</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec nisl ac diam varius venenatis non convallis enim. Nulla quam erat, imperdiet eget magna vitae, condimentum lobortis mi. Duis dignissim pharetra dui. Vivamus gravida libero non pellentesque eleifend. Nullam sit amet interdum quam. Curabitur lacus erat, pharetra ac mi consectetur, dictum lacinia leo. Quisque eget ligula at nunc ultrices pharetra sit amet in ex. Vivamus varius fermentum suscipit. Curabitur ultrices sit amet sem sit amet elementum. Proin hendrerit venenatis sapien, eu vestibulum neque molestie congue. Nam varius volutpat ornare. Mauris nec finibus risus. Fusce accumsan ac ex nec ultrices. Vivamus vitae pretium urna, ut cursus nibh. Quisque imperdiet ut lorem tristique hendrerit. Duis quis molestie velit. Phasellus rhoncus mattis ante, eget cursus massa maximus ut. Praesent placerat ipsum nunc, quis pretium nunc consequat et. Quisque sagittis pretium fermentum. Aliquam ac ex a urna mollis finibus. Proin lobortis pellentesque dapibus. Praesent id finibus nisi, eget tincidunt sapien.
+          </p>
+        </div>
+      </section>
 
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec nisl ac diam varius venenatis non convallis enim. Nulla quam erat, imperdiet eget magna vitae, condimentum lobortis mi. Duis dignissim pharetra dui. Vivamus gravida libero non pellentesque eleifend. Nullam sit amet interdum quam. Curabitur lacus erat, pharetra ac mi consectetur, dictum lacinia leo. Quisque eget ligula at nunc ultrices pharetra sit amet in ex. Vivamus varius fermentum suscipit. Curabitur ultrices sit amet sem sit amet elementum. Proin hendrerit venenatis sapien, eu vestibulum neque molestie congue. Nam varius volutpat ornare. Mauris nec finibus risus. Fusce accumsan ac ex nec ultrices. Vivamus vitae pretium urna, ut cursus nibh. Quisque imperdiet ut lorem tristique hendrerit. Duis quis molestie velit. Phasellus rhoncus mattis ante, eget cursus massa maximus ut. Praesent placerat ipsum nunc, quis pretium nunc consequat et. Quisque sagittis pretium fermentum. Aliquam ac ex a urna mollis finibus. Proin lobortis pellentesque dapibus. Praesent id finibus nisi, eget tincidunt sapien. 
-        </p>
+      <Divider/>
+
+      <section class="bg-white py-8" >
+        <div class="flex gap-4 flex-col px-96">
+          <p class="text-4xl font-semibold text-indigo-950">Testimonials</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec nisl ac diam varius venenatis non convallis enim. Nulla quam erat, imperdiet eget magna vitae, condimentum lobortis mi. Duis dignissim pharetra dui. Vivamus gravida libero non pellentesque eleifend. Nullam sit amet interdum quam. Curabitur lacus erat, pharetra ac mi consectetur, dictum lacinia leo. Quisque eget ligula at nunc ultrices pharetra sit amet in ex. Vivamus varius fermentum suscipit. Curabitur ultrices sit amet sem sit amet elementum. Proin hendrerit venenatis sapien, eu vestibulum neque molestie congue. Nam varius volutpat ornare. Mauris nec finibus risus. Fusce accumsan ac ex nec ultrices. Vivamus vitae pretium urna, ut cursus nibh. Quisque imperdiet ut lorem tristique hendrerit. Duis quis molestie velit. Phasellus rhoncus mattis ante, eget cursus massa maximus ut. Praesent placerat ipsum nunc, quis pretium nunc consequat et. Quisque sagittis pretium fermentum. Aliquam ac ex a urna mollis finibus. Proin lobortis pellentesque dapibus. Praesent id finibus nisi, eget tincidunt sapien.
+          </p>
+        </div>
       </section>
     </div>
   </main>

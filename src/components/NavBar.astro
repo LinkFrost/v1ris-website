@@ -4,7 +4,7 @@ import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
-  <nav class="w-full justify-between items-center flex text-xl py-4 animate-fade-in-first border-indigo-900">
+  <nav class="w-full justify-between items-center flex text-xl py-4 animate-fade-in-first border-indigo-900 px-96 bg-black">
     <div class="flex gap-12 ">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
@@ -14,11 +14,25 @@ import HeaderLink from './HeaderLink.astro';
     </div>
     
     <div class="flex gap-4">
-      <img src="svg/soundcloud.svg"/>
-      <img src="svg/spotify.svg"/>
-      <img src="svg/bandcamp.svg"/>
-      <img src="svg/bluesky.svg"/>
-      <img src="svg/instagram.svg"/>
+      <a class="hover:scale-125" href="https://soundcloud.com/v1ris">
+        <img src="svg/soundcloud.svg"/>
+      </a>
+
+      <a class="hover:scale-125" href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH">
+        <img src="svg/spotify.svg"/>
+      </a>
+
+      <a class="hover:scale-125" href="https://v1ris.bandcamp.com/album/bury-yourself">
+        <img src="svg/bandcamp.svg"/>
+      </a>
+
+      <a class="hover:scale-125" href="https://bsky.app/profile/v1ris.com">
+        <img src="svg/bluesky.svg"/>
+      </a>
+
+      <a class="hover:scale-125" href="https://www.instagram.com/v1ris_music/">
+        <img src="svg/instagram.svg"/>
+      </a>
     </div>
   </nav>
 
