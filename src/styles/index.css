@@ -1,11 +1,7 @@
 @import "tailwindcss";
 
 .restrictWidthScreen {
-  @apply px-8 sm:px-12 sm:max-w-screen-lg m-auto;
-}
-
-.restrictWidthPadding {
-  @apply sm:max-w-screen-lg m-auto;
+  @apply px-8 sm:px-12 sm:max-w-screen-lg 3xl:max-w-screen-xl 4xl:max-w-screen-2xl m-auto;
 }
 
 .baseLayout {
@@ -44,4 +40,9 @@
 
 @theme {
   --font-sanchez: "Sanchez", "sans-serrif";
+}
+
+@theme {
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 160rem;
 }
