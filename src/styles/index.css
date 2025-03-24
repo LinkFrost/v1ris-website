@@ -9,6 +9,8 @@
 }
 
 .header {
+  @apply bg-local;
+
   background-image: url("/img/starbreak.png");
 }
 
