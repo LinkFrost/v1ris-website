@@ -8,6 +8,10 @@
   @apply w-full flex flex-col items-center justify-center font-sanchez mx-auto;
 }
 
+.header {
+  background-image: url("img/starbreak.png");
+}
+
 @keyframes fade-in-first {
   from {
     opacity: 0;
