@@ -5,7 +5,7 @@
 }
 
 .baseLayout {
-  @apply w-full flex flex-col items-center justify-center font-sanchez mx-auto pt-4;
+  @apply w-full flex flex-col items-center justify-center font-sanchez mx-auto;
 }
 
 @keyframes fade-in-first {
@@ -45,4 +45,9 @@
 @theme {
   --breakpoint-3xl: 120rem;
   --breakpoint-4xl: 160rem;
+}
+
+@theme {
+  --color-v1risGray: #1c1c21;
+  --color-v1risDarkPurple: #17144c;
 }
