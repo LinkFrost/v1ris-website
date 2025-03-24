@@ -14,6 +14,10 @@
   background-image: url("/img/starbreak.png");
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 0.01px black;
+}
+
 @keyframes fade-in-first {
   from {
     opacity: 0;
