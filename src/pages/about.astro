@@ -3,12 +3,36 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title={SITE_TITLE} description={SITE_DESCRIPTION} restrictWidth={true}>
-  <section class="flex flex-col gap-4 text-xl">
-    <p>Hi! When I’m not going by the name v1ris, my name is Anna Iris Hill. I’m Canadian born, grew up in New England, and am currently based in Hartford, Connecticut.</p>
-    
-    <p>I wear a lot of hats, but my big ones are as a composer/music producer/songwriter and violinist/vocalist. My latest solo work is a story-driven pop concept album. Go to digital connection linktree (maybe make a custom one thats a link on my website). I also play guitar, bass, and keyboard. </p>
-    
-    <p>Besides music, I’m a writer, and am the narrative designer of the same game I’m the composer for, Rope Tool. I code as a hobby and have made games in Unity and Gamemaker, and I have experience implementing music in them both directly and through middleware such as FMOD and Wwise.</p>
-  </section>
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION} restrictWidth={false}>
+  <main
+    class="relative w-full min-h-screen bg-[url(/img/starbreak.png)] bg-local bg-cover bg-center"
+  >
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-[#a3b3ff80] to-indigo-300 pointer-events-none"
+    >
+    </div>
+
+    <section class="restrictWidthScreen pt-4 text-xl relative z-10">
+      <p>
+        Hi! When I’m not going by the name v1ris, my name is Anna Iris Hill. I’m
+        Canadian born, grew up in New England, and am currently based in
+        Hartford, Connecticut.
+      </p>
+
+      <p>
+        I wear a lot of hats, but my big ones are as a composer/music
+        producer/songwriter and violinist/vocalist. My latest solo work is a
+        story-driven pop concept album. Go to digital connection linktree (maybe
+        make a custom one thats a link on my website). I also play guitar, bass,
+        and keyboard.
+      </p>
+
+      <p>
+        Besides music, I’m a writer, and am the narrative designer of the same
+        game I’m the composer for, Rope Tool. I code as a hobby and have made
+        games in Unity and Gamemaker, and I have experience implementing music
+        in them both directly and through middleware such as FMOD and Wwise.
+      </p>
+    </section>
+  </main>
 </Layout>

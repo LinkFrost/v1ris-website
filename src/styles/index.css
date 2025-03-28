@@ -18,6 +18,10 @@
   text-shadow: 2px 2px 0.01px black;
 }
 
+.text-shadow-purple {
+  text-shadow: 1px 1px 0.1px #4842c2;
+}
+
 @keyframes fade-in-first {
   from {
     opacity: 0;

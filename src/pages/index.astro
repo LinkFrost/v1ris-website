@@ -1,72 +1,111 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import Divider from '../components/design/Divider.astro';
+import Layout from "../layouts/Layout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Divider from "../components/design/Divider.astro";
 import "../styles/index.css";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION} restrictWidth={false}>
-  <!-- <main class="w-full bg-local bg-[linear-gradient(to_bottom,transparent,theme(colors.indigo.300)),url(/img/starbreak.png)]"> -->
-  <!-- <main class="w-full bg-[url(/img/starbreak.png)] bg-fixed relative before:absolute before:inset-0 before:bg-linear-to-b before:from-transparent before:to-indigo-300 before:pointer-events-none"> -->
-    <!-- <main class="relative w-full bg-[url(/img/starbreak.png)] bg-fixed before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-indigo-300 before:pointer-events-none"> -->
-    <main class="relative w-full min-h-screen bg-[url(/img/starbreak.png)] bg-local bg-cover bg-center">
-      <!-- Gradient overlay -->
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-300 pointer-events-none"></div>
+  <main
+    class="relative w-full min-h-screen bg-[url(/img/starbreak.png)] bg-local bg-cover bg-center"
+  >
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-300 pointer-events-none"
+    >
+    </div>
     <div class="flex flex-col z-10 relative">
       <section class="pb-8 pt-4">
-      <!-- <section class="bg-[url(/img/starbreak.png)] pb-8 pt-4 bg-fixed bg-top"> -->
-        <div class="restrictWidthScreen flex flex-col gap-4 items-center justify-center animate-fade-in-first">
-          <p class="text-xl sm:text-5xl font-semibold text-indigo-300 text-shadow drop-shadow-xl shadow-white">Storytelling Through Sound</p>
+        <div
+          class="restrictWidthScreen flex flex-col gap-4 items-center justify-center animate-fade-in-first"
+        >
+          <p
+            class="text-xl sm:text-5xl font-semibold text-indigo-300 text-shadow drop-shadow-xl shadow-white"
+          >
+            Storytelling Through Sound
+          </p>
 
-          <p class="text-5xl sm:text-9xl w-full text-center py-40 bg-black text-gray-900">DEMO REEL</p>
+          <p
+            class="text-5xl sm:text-9xl w-full text-center py-40 bg-black text-gray-900"
+          >
+            DEMO REEL
+          </p>
         </div>
       </section>
 
-      <Divider/>
+      <Divider />
 
       <!-- <section class="bg-v1risGray py-8"> -->
       <section class="bg-gray-900 py-8">
-        <div class="restrictWidthScreen items-center lg:items-start flex flex-col lg:flex-row gap-4 lg:gap-24 animate-fade-in-second">
-          <img class="rounded-full border-indigo-300 border-4 transition-opacity ease-in-out" width="300px" src="img/headshot.png" alt="v1ris headshot"/>
+        <div
+          class="restrictWidthScreen items-center lg:items-start flex flex-col lg:flex-row gap-4 lg:gap-24 animate-fade-in-second"
+        >
+          <img
+            class="rounded-full border-indigo-300 border-4 transition-opacity ease-in-out"
+            width="300px"
+            src="img/headshot.png"
+            alt="v1ris headshot"
+          />
 
-          <div class="flex flex-col gap-8 justify-normal lg:justify-between lg:py-12">
+          <div
+            class="flex flex-col gap-8 justify-normal lg:justify-between lg:py-12"
+          >
             <p class="text-xl">
-              Hi, I'm <span class="font-semibold text-4xl text-indigo-300">v1ris</span>, a composer writing interactive music for narrative-driven games. I use my multi-instrumental and electronic background to write a wide variety of memorable music.
+              Hi, I'm <span class="font-semibold text-4xl text-indigo-300"
+                >v1ris</span
+              >, a composer writing interactive music for narrative-driven
+              games. I use my multi-instrumental and electronic background to
+              write a wide variety of memorable music.
             </p>
 
-            <a class="text-2xl hover:underline text-indigo-300 font-semibold" href="/contact">Let's work together!</a>
+            <a
+              class="text-2xl hover:underline text-indigo-300 font-semibold"
+              href="/contact">Let's work together!</a
+            >
           </div>
         </div>
       </section>
 
-      <Divider/>
+      <Divider />
 
-      <!-- <section class="bg-[url(/img/starbreak.png)] bg-blend-overlay bg-indigo-300 py-8 bg-fixed bg-cover bg-center"> -->
       <section class="py-8">
         <div class="restrictWidthScreen flex gap-8 flex-col">
-          <p class="text-4xl font-semibold text-v1risDarkPurple">New Releases</p>
-          
-          <p class="text-5xl sm:text-9xl w-full text-center py-40 bg-black text-gray-900">NEW RELEASES</p>
+          <p class="text-4xl font-semibold text-v1risDarkPurple">
+            New Releases
+          </p>
+
+          <p
+            class="text-5xl sm:text-9xl w-full text-center py-40 bg-black text-gray-900"
+          >
+            NEW RELEASES
+          </p>
         </div>
       </section>
 
-      <Divider/>
+      <Divider />
 
-      <section class="bg-gray-900 py-8" >
+      <section class="bg-gray-900 py-8">
         <div class="restrictWidthScreen flex gap-8 flex-col">
           <p class="text-4xl font-semibold text-indigo-300">Testimonials</p>
 
-          <p class="text-4xl sm:text-8xl  w-full text-center py-40 bg-black text-gray-900">TESTIMONIALS</p>
+          <p
+            class="text-4xl sm:text-8xl w-full text-center py-40 bg-black text-gray-900"
+          >
+            TESTIMONIALS
+          </p>
         </div>
       </section>
 
-      <Divider/>
+      <Divider />
 
       <section class="py-8">
         <div class="restrictWidthScreen flex gap-8 flex-col">
           <p class="text-4xl font-semibold text-v1risDarkPurple">Other</p>
-          
-          <p class="text-5xl sm:text-9xl w-full text-center py-40 bg-black text-gray-900">OTHER</p>
+
+          <p
+            class="text-5xl sm:text-9xl w-full text-center py-40 bg-black text-gray-900"
+          >
+            OTHER
+          </p>
         </div>
       </section>
     </div>
