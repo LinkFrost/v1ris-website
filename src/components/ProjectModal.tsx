@@ -11,7 +11,7 @@ export const ProjectModal = (props: {
 }) => {
   return (
     <div
-      className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center top-0 left-0 right-0 bottom-0"
+      className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center top-0 left-0"
       role="dialog"
       aria-modal="true"
     >
