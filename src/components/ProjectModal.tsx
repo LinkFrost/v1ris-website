@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/index.css";
 
 export const ProjectModal = (props: {
   name: string;
@@ -15,7 +16,7 @@ export const ProjectModal = (props: {
       aria-modal="true"
     >
       <div
-        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[95vh] p-4 overflow-scroll"
+        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[95vh] p-4 overflow-scroll no-scrollbar"
         style={{ width: "clamp(30%, 480px, 90%)" }}
       >
         <button
