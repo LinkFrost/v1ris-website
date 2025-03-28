@@ -1,17 +1,19 @@
 ---
-import Divider from './design/Divider.astro';
-import HeaderLink from './HeaderLink.astro';
-import Soundcloud from "../../public/svg/soundcloud.svg"
-import Spotify from "../../public/svg/spotify.svg"
-import BandCamp from "../../public/svg/bandcamp.svg"
-import BlueSky from "../../public/svg/bluesky.svg"
-import Instagram from "../../public/svg/instagram.svg"
+import Divider from "./design/Divider.astro";
+import HeaderLink from "./HeaderLink.astro";
+import Soundcloud from "../assets/soundcloud.svg";
+import Spotify from "../assets/spotify.svg";
+import BandCamp from "../assets/bandcamp.svg";
+import BlueSky from "../assets/bluesky.svg";
+import Instagram from "../assets/instagram.svg";
 
-const svgColor = "#a3b3ff"
+const svgColor = "#a3b3ff";
 ---
 
 <header class="flex items-center justify-center bg-black">
-  <nav class="w-full sm:justify-between justify-normal gap-4 sm:gap-0 items-center flex flex-col sm:flex-row text-xl py-4 sm:py-8 animate-fade-in-first border-indigo-900 px-4 sm:px-12 sm:max-w-screen-lg 3xl:max-w-screen-xl 4xl:max-w-screen-2xl">
+  <nav
+    class="w-full sm:justify-between justify-normal gap-4 sm:gap-0 items-center flex flex-col sm:flex-row text-xl py-4 sm:py-8 animate-fade-in-first border-indigo-900 px-4 sm:px-12 sm:max-w-screen-lg 3xl:max-w-screen-xl 4xl:max-w-screen-2xl"
+  >
     <div class="flex gap-4 lg:gap-10">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
@@ -19,29 +21,54 @@ const svgColor = "#a3b3ff"
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
-    
+
     <div class="flex gap-4">
-      <a class="hover:scale-125" href="https://soundcloud.com/v1ris" name="soundcloud">
-         <Soundcloud fill={svgColor}/>
+      <a
+        class="hover:scale-125"
+        href="https://soundcloud.com/v1ris"
+        target="_blank"
+        name="soundcloud"
+      >
+        <Soundcloud fill={svgColor} />
       </a>
 
-      <a class="hover:scale-125" href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH" name="spotify">
-        <Spotify fill={svgColor}/>
+      <a
+        class="hover:scale-125"
+        href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH"
+        target="_blank"
+        name="spotify"
+      >
+        <Spotify fill={svgColor} />
       </a>
 
-      <a class="hover:scale-125" href="https://v1ris.bandcamp.com/album/bury-yourself" name="bandcamp">
-        <BandCamp fill={svgColor}/>
+      <a
+        class="hover:scale-125"
+        href="https://v1ris.bandcamp.com/album/bury-yourself"
+        target="_blank"
+        name="bandcamp"
+      >
+        <BandCamp fill={svgColor} />
       </a>
 
-      <a class="hover:scale-125" href="https://bsky.app/profile/v1ris.com" name="bluesky">
-        <BlueSky fill={svgColor}/>
+      <a
+        class="hover:scale-125"
+        href="https://bsky.app/profile/v1ris.com"
+        target="_blank"
+        name="bluesky"
+      >
+        <BlueSky fill={svgColor} />
       </a>
 
-      <a class="hover:scale-125" href="https://www.instagram.com/v1ris_music/" name="instagram">
-        <Instagram fill={svgColor}/>
+      <a
+        class="hover:scale-125"
+        href="https://www.instagram.com/v1ris_music/"
+        target="_blank"
+        name="instagram"
+      >
+        <Instagram fill={svgColor} />
       </a>
     </div>
   </nav>
 
-  <Divider/>
+  <Divider />
 </header>
