@@ -16,7 +16,7 @@ export const ProjectModal = (props: {
       aria-modal="true"
     >
       <div
-        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[95%] p-4 overflow-scroll no-scrollbar"
+        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[95%] p-4 overflow-y-auto no-scrollbar"
         style={{
           width: "clamp(30%, 480px, 90%)",
           WebkitOverflowScrolling: "touch",
