@@ -16,10 +16,10 @@ export const ProjectModal = (props: {
       aria-modal="true"
     >
       <div
-        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg p-4 overflow-y-auto"
+        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[calc(100vh-2rem)] p-4 overflow-y-auto"
         style={{
           width: "clamp(30%, 480px, 90%)",
-          height: "clamp(30%, 480px, 90%)",
+          // height: "clamp(30%, 480px, 90%)",
           WebkitOverflowScrolling: "touch",
         }}
       >
