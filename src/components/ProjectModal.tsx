@@ -11,12 +11,12 @@ export const ProjectModal = (props: {
 }) => {
   return (
     <div
-      className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center top-0 left-0"
+      className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center inset-0"
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[90dvh] p-4 overflow-y-auto"
+        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[calc(100vh-2rem)] p-4 overflow-y-auto"
         style={{
           width: "clamp(30%, 480px, 90%)",
           WebkitOverflowScrolling: "touch",
