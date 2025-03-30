@@ -19,7 +19,6 @@ export const ProjectModal = (props: {
         className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[90vh] p-4 overflow-scroll"
         style={{
           width: "clamp(40%, 480px, 90%)",
-          // height: "clamp(30%, 480px, 90%)",
           WebkitOverflowScrolling: "touch",
         }}
       >
