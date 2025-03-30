@@ -76,3 +76,8 @@
   --color-v1risGray: #1c1c21;
   --color-v1risDarkPurple: #17144c;
 }
+
+html,
+body {
+  overscroll-behavior: contain;
+}
