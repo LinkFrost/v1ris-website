@@ -36,7 +36,7 @@ export const ProjectModal = (props: {
                 onClick={props.handleClose}
                 className="text-white hover:cursor-pointer hover:scale-125 self-end"
               >
-                <img src="../../public/svg/x.svg" alt="close" />
+                <img src="svg/x.svg" alt="close" />
               </button>
 
               <h3 className="font-semibold text-4xl text-center">
