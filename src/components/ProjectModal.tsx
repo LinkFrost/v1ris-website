@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/index.css";
 
 export const ProjectModal = (props: {
@@ -9,6 +9,20 @@ export const ProjectModal = (props: {
   description: string;
   handleClose: () => void;
 }) => {
+  useEffect(() => {
+    // Lock body scroll when modal opens
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+
+    return () => {
+      // Restore body scroll when modal closes
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    };
+  }, []);
+
   return (
     <div
       // className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center inset-0"

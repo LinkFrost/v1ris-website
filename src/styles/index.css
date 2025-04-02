@@ -33,18 +33,6 @@
   scrollbar-width: none; /* Firefox */
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
-body {
-  min-height: -webkit-fill-available;
-}
-
-.overflow-y-auto {
-  -webkit-overflow-scrolling: touch;
-}
-
 @keyframes fade-in-first {
   from {
     opacity: 0;
@@ -89,7 +77,30 @@ body {
   --color-v1risDarkPurple: #17144c;
 }
 
+:root {
+  --vh: 1vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .fixed {
+    position: fixed;
+  }
+
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Ensure modal content is scrollable on iOS */
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto !important;
+}
+
+/* Prevent elastic scrolling on iOS */
 html,
 body {
-  overscroll-behavior: contain;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
