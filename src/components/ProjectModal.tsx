@@ -11,12 +11,16 @@ export const ProjectModal = (props: {
 }) => {
   return (
     <div
-      className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center inset-0"
+      // className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center inset-0"
+      className="z-50 fixed bg-black/75 flex items-center justify-center inset-0"
       role="dialog"
       aria-modal="true"
+      style={{
+        height: "-webkit-fill-available",
+      }}
     >
       <div
-        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[90vh] p-4 overflow-scroll"
+        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[85vh] p-4 overflow-y-auto"
         style={{
           width: "clamp(40%, 480px, 90%)",
           WebkitOverflowScrolling: "touch",
@@ -24,7 +28,8 @@ export const ProjectModal = (props: {
       >
         <button
           onClick={props.handleClose}
-          className="text-white hover:cursor-pointer hover:scale-125 self-end"
+          // className="text-white hover:cursor-pointer hover:scale-125 self-end"
+          className="text-white hover:cursor-pointer hover:scale-125 self-end sticky top-0 z-10"
         >
           <img src="src/assets/x.svg" alt="close" />
         </button>

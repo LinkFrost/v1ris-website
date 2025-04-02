@@ -33,6 +33,18 @@
   scrollbar-width: none; /* Firefox */
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: -webkit-fill-available;
+}
+
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
 @keyframes fade-in-first {
   from {
     opacity: 0;
