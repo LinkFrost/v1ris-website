@@ -5,7 +5,7 @@ export const ProjectCard = (props: {
   name: string;
   thumbnail: string;
   projectLink?: string;
-  soundtrackLink?: string;
+  musicLink?: string;
   description: string;
 }) => {
   const [showModal, setShowModal] = useState(false);
@@ -26,6 +26,7 @@ export const ProjectCard = (props: {
         <ProjectModal
           name={props.name}
           projectLink={props.projectLink}
+          musicLink={props.musicLink}
           thumbnail={props.thumbnail}
           description={props.description}
           handleClose={() => setShowModal(false)}

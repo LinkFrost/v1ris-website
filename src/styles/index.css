@@ -91,16 +91,21 @@
   }
 }
 
-/* Ensure modal content is scrollable on iOS */
-.overflow-y-auto {
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto !important;
+/* iOS-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent overscroll on the body */
+  body {
+    overscroll-behavior-y: none;
+  }
 }
 
-/* Prevent elastic scrolling on iOS */
-html,
-body {
-  /* overflow: hidden; */
-  position: relative;
-  height: 100%;
+/* Fix 100vh issue on iOS */
+@supports (-webkit-touch-callout: none) {
+  .min-h-full {
+    min-height: -webkit-fill-available;
+  }
 }

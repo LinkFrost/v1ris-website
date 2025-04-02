@@ -5,70 +5,77 @@ export const ProjectModal = (props: {
   name: string;
   thumbnail: string;
   projectLink?: string;
-  soundtrackLink?: string;
+  musicLink?: string;
   description: string;
   handleClose: () => void;
 }) => {
   useEffect(() => {
-    // Lock body scroll when modal opens
     document.body.style.overflow = "hidden";
-    document.body.style.position = "fixed";
-    document.body.style.width = "100%";
-
     return () => {
-      // Restore body scroll when modal closes
-      document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.body.style.width = "";
+      document.body.style.overflow = "auto";
     };
   }, []);
 
   return (
     <div
-      // className="z-50 fixed bg-black/75 h-[100dvh] w-screen flex items-center justify-center inset-0"
-      className="z-50 fixed bg-black/75 flex items-center justify-center inset-0"
+      className="fixed inset-0 z-50 bg-black/75"
       role="dialog"
       aria-modal="true"
-      style={{
-        height: "-webkit-fill-available",
-      }}
     >
-      <div
-        className="bg-indigo-900 relative flex flex-col gap-4 items-center rounded-lg min-h-fit max-h-[85vh] p-4 overflow-y-auto"
-        style={{
-          width: "clamp(40%, 480px, 90%)",
-          WebkitOverflowScrolling: "touch",
-        }}
-      >
-        <button
-          onClick={props.handleClose}
-          // className="text-white hover:cursor-pointer hover:scale-125 self-end"
-          className="text-white hover:cursor-pointer hover:scale-125 self-end sticky top-0 z-10"
-        >
-          <img src="src/assets/x.svg" alt="close" />
-        </button>
-
-        <h3 className="font-semibold text-4xl">{props.name}</h3>
-
-        <img src={props.thumbnail} alt={props.name} width={"400px"} />
-
-        <p className="text-xl">{props.description}</p>
-
-        <div className="mt-8 flex flex-row gap-4">
-          <a
-            href={props.projectLink}
-            target="_blank"
-            className="text-lg p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+      <div className="absolute inset-0 overflow-y-auto">
+        <div className="min-h-full flex items-center justify-center p-4">
+          <div
+            className="bg-indigo-900 rounded-lg w-full max-w-[660px] overflow-y-auto"
+            style={{
+              maxHeight: "calc(100vh - 14rem)",
+              WebkitOverflowScrolling: "touch",
+            }}
           >
-            Checkout the project!
-          </a>
-          <a
-            href={props.soundtrackLink}
-            target="_blank"
-            className="text-lg p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
-          >
-            Listen to the soundtrack!
-          </a>
+            <div className="p-4 flex flex-col gap-4">
+              <button
+                onClick={props.handleClose}
+                className="text-white hover:cursor-pointer hover:scale-125 self-end"
+              >
+                <img src="src/assets/x.svg" alt="close" />
+              </button>
+
+              <h3 className="font-semibold text-4xl text-center">
+                {props.name}
+              </h3>
+
+              <img
+                src={props.thumbnail}
+                alt={props.name}
+                className="w-full max-w-[400px] mx-auto"
+              />
+
+              <p className="text-xl">{props.description}</p>
+
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                {props.projectLink && (
+                  <a
+                    href={props.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+                  >
+                    Checkout the project!
+                  </a>
+                )}
+
+                {props.musicLink && (
+                  <a
+                    href={props.musicLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+                  >
+                    Listen to the soundtrack!
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
