@@ -27,14 +27,14 @@ export const ProjectModal = (props: {
           <div
             className="bg-indigo-900 rounded-lg w-full max-w-[660px] overflow-y-auto"
             style={{
-              maxHeight: "calc(100vh - 14rem)",
+              maxHeight: "calc(100vh - 10rem)",
               WebkitOverflowScrolling: "touch",
             }}
           >
             <div className="p-4 flex flex-col gap-4">
               <button
                 onClick={props.handleClose}
-                className="text-white hover:cursor-pointer hover:scale-125 self-end"
+                className="text-white hover:cursor-pointer hover:scale-125 self-end absolute"
               >
                 <img src="svg/x.svg" alt="close" />
               </button>
@@ -49,15 +49,15 @@ export const ProjectModal = (props: {
                 className="w-full max-w-[400px] mx-auto"
               />
 
-              <p className="text-xl">{props.description}</p>
+              <p className="text-xl text-center">{props.description}</p>
 
-              <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <div className="mt-2 flex flex-wrap justify-center gap-4">
                 {props.projectLink && (
                   <a
                     href={props.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+                    className="text-lg font-semibold p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
                   >
                     Checkout the project!
                   </a>
@@ -68,7 +68,7 @@ export const ProjectModal = (props: {
                     href={props.musicLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+                    className="text-lg font-semibold p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
                   >
                     Listen to the soundtrack!
                   </a>

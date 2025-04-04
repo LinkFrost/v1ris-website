@@ -26,11 +26,7 @@ import { ProjectCard } from "../components/ProjectCard";
           class="grid grid-cols-2 sm:grid-cols-3 3xl:grid-cols-4 gap-4 sm:gap-8"
         >
           {
-            [
-              ...PROJECTS_ORIGINAL_SOUNDTRACKS,
-              ...PROJECTS_ORIGINAL_SOUNDTRACKS,
-              ...PROJECTS_ORIGINAL_SOUNDTRACKS,
-            ].map((p) => (
+            [...PROJECTS_ORIGINAL_SOUNDTRACKS].map((p) => (
               <ProjectCard
                 name={p.name}
                 projectLink={p.projectLink}
@@ -53,11 +49,7 @@ import { ProjectCard } from "../components/ProjectCard";
           class="grid grid-cols-2 sm:grid-cols-3 3xl:grid-cols-4 gap-4 sm:gap-8"
         >
           {
-            [
-              ...PROJECTS_INDEPENDENT_WORKS,
-              ...PROJECTS_INDEPENDENT_WORKS,
-              ...PROJECTS_INDEPENDENT_WORKS,
-            ].map((p) => (
+            [...PROJECTS_INDEPENDENT_WORKS].map((p) => (
               <ProjectCard
                 name={p.name}
                 projectLink={p.projectLink}
