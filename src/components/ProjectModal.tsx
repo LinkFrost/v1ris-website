@@ -57,7 +57,7 @@ export const ProjectModal = (props: {
                     href={props.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-semibold p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+                    className="text-xl font-semibold py-2 px-4 text-indigo-300 hover:bg-v1risDarkPurple rounded-lg "
                   >
                     Checkout the project!
                   </a>
@@ -68,7 +68,7 @@ export const ProjectModal = (props: {
                     href={props.musicLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-semibold p-4 bg-indigo-300 text-v1risDarkPurple rounded-lg hover:scale-110"
+                    className="text-xl font-semibold py-2 px-4 text-indigo-300 hover:bg-v1risDarkPurple rounded-lg "
                   >
                     Listen to the soundtrack!
                   </a>
