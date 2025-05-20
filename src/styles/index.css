@@ -5,7 +5,7 @@
 }
 
 .baseLayout {
-  @apply w-full flex flex-col items-center justify-center font-sanchez mx-auto;
+  @apply w-full flex flex-col items-center justify-center font-azeret mx-auto;
 }
 
 .header {
@@ -59,12 +59,47 @@
   animation: fade-in-second 1.5s ease-in-out forwards;
 }
 
-@theme {
-  --font-inter: "Inter", "sans-serrif";
+@font-face {
+  font-family: "AzeretMono";
+  src: url("../../public/fonts/AzeretMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzeretMono-Italic";
+  src: url("../../public/fonts/AzeretMono-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nippo";
+  src: url("../../public/fonts/Nippo-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Telma";
+  src: url("../../public/fonts/Telma-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme {
   --font-sanchez: "Sanchez", "sans-serrif";
+  --font-inter: "Inter", "sans-serrif";
+  --font-azeret: "AzeretMono", "sans-serrif";
+  --font-azeret-italic: "AzeretMono-Italic", "sans-serrif";
+  --font-nippo: "Nippo", "sans-serrif";
+  --font-telma: "Telma", "sans-serrif";
 }
 
 @theme {
