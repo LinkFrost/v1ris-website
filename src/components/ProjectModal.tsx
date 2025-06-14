@@ -59,7 +59,7 @@ export const ProjectModal = (props: {
                     rel="noopener noreferrer"
                     className="text-xl font-semibold py-2 px-4 text-indigo-300 hover:bg-v1risDarkPurple rounded-lg "
                   >
-                    Checkout the project!
+                    Check out the project!
                   </a>
                 )}
 

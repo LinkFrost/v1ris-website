@@ -17,7 +17,7 @@ export const ProjectCard = (props: {
         className="hover:cursor-pointer hover:[&>div]:text-indigo-200 hover:[&>div]:bg-v1risDarkPurple h-36 items-center flex hover:scale-105 bg-local bg-cover bg-center rounded-lg"
         onClick={() => setShowModal(true)}
       >
-        <div className="bg-indigo-900 w-full p-2 self-end text-white font-semibold text-base sm:text-xl text-center rounded-b-lg">
+        <div className="bg-indigo-900 w-full p-2 self-end text-white text-base sm:text-xl text-center rounded-b-lg">
           {props.name}
         </div>
       </button>
