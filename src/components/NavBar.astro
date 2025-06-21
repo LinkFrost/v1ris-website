@@ -1,6 +1,7 @@
 ---
-import Divider from "./design/Divider.astro";
+import { NavigationMenu } from "./ui/navigation-menu";
 import HeaderLink from "./HeaderLink.astro";
+
 import Soundcloud from "../../public/svg/soundcloud.svg";
 import Spotify from "../../public/svg/spotify.svg";
 import BandCamp from "../../public/svg/bandcamp.svg";
@@ -11,14 +12,16 @@ const svgColor = "#a3b3ff";
 ---
 
 <header class="flex items-center justify-center bg-black">
-  <nav
-    class="w-full sm:justify-between justify-normal gap-4 sm:gap-0 items-center flex flex-col sm:flex-row text-xl py-4 sm:py-8 animate-fade-in-first border-indigo-900 px-4 sm:px-12 sm:max-w-screen-lg 3xl:max-w-screen-xl 4xl:max-w-screen-2xl"
-  >
+  <NavigationMenu>
     <div class="flex gap-4 lg:gap-10">
       <HeaderLink href="/">Home</HeaderLink>
+
       <HeaderLink href="/projects">Projects</HeaderLink>
+
       <HeaderLink href="/violin">Violin</HeaderLink>
+
       <HeaderLink href="/about">About</HeaderLink>
+
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
 
@@ -47,7 +50,7 @@ const svgColor = "#a3b3ff";
         target="_blank"
         name="bandcamp"
       >
-        <BandCamp fill={svgColor} width={50} height={50}/>
+        <BandCamp fill={svgColor} width={50} height={50} />
       </a>
 
       <a
@@ -68,7 +71,5 @@ const svgColor = "#a3b3ff";
         <Instagram fill={svgColor} />
       </a>
     </div>
-  </nav>
-
-  <Divider />
+  </NavigationMenu>
 </header>

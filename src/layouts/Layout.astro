@@ -3,21 +3,33 @@ import BaseHead from "../components/BaseHead.astro";
 import NavBar from "../components/NavBar.astro";
 import "../styles/index.css";
 
-const { title, description, image = '/favicon.ico', restrictWidth } = Astro.props;
+const {
+  title,
+  description,
+  image = "/favicon.ico",
+  restrictWidth,
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" style={{ colorScheme: "dark" }} class="bg-indigo-300 text-base">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
-	<body>
-		<div>
-			<NavBar/>
+<html
+  lang="en"
+  style={{ colorScheme: "dark" }}
+  class="bg-indigo-300 text-base font-azeret"
+>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-			<div class={`baseLayout ${restrictWidth ? "restrictWidthScreen" : ""}`}>
-				<slot/>
-			</div>
-		</div>
-	</body>
+  <body
+    class="flex flex-col relative justify-center align-middle bg-[url(/img/starbreak.png)] bg-local bg-cover bg-center min-h-screen"
+  >
+    <NavBar />
+
+    <div class="absolute inset-0 bg-[#a3b3ff]/80 pointer-events-none"></div>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+  </body>
 </html>

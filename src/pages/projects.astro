@@ -3,40 +3,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Layout from "../layouts/Layout.astro";
 import { PROJECTS_ORIGINAL_SOUNDTRACKS } from "../consts";
 import { PROJECTS_INDEPENDENT_WORKS } from "../consts";
-import { ProjectCard } from "../components/ProjectCard";
+import Project from "../components/Project.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION} restrictWidth={false}>
-  <main
-    class="relative w-full min-h-screen bg-[url(/img/starbreak.png)] bg-local bg-cover bg-center"
-  >
-    <div
-      class="absolute inset-0 bg-gradient-to-b from-[#b0bdfdac] to-indigo-300 pointer-events-none"
-    >
-    </div>
+  <div>
     <section
-      class="restrictWidthScreen flex flex-col gap-12 w-full pt-4 z-10 relative"
+      class="responsiveContainer flex flex-col gap-12 w-full pt-4 z-10 relative"
     >
       <div class="flex flex-col gap-4">
         <p
-          class="text-2xl sm:text-4xl font-semibold font-nippo text-indigo-950"
+          class="text-4xl font-semibold font-nippo text-gray-900 text-shadow-white"
         >
           Original Soundtracks
         </p>
 
         <div
-          class="grid grid-cols-2 sm:grid-cols-3 3xl:grid-cols-4 gap-4 sm:gap-8"
+          class="grid grid-cols-1 sm:grid-cols-3 3xl:grid-cols-4 gap-4 sm:gap-8"
         >
           {
             [...PROJECTS_ORIGINAL_SOUNDTRACKS].map((p) => (
-              <ProjectCard
-                name={p.name}
-                projectLink={p.projectLink}
-                musicLink={p.musicLink}
-                thumbnail={p.thumbnail}
-                description={p.description}
-                client:load
-              />
+              <Project project={p} />
             ))
           }
         </div>
@@ -44,28 +31,17 @@ import { ProjectCard } from "../components/ProjectCard";
 
       <div class="flex flex-col gap-4">
         <p
-          class="text-2xl sm:text-4xl font-semibold font-nippo text-indigo-950"
+          class="text-4xl font-semibold font-nippo text-gray-900 text-shadow-white"
         >
           Independent Works
         </p>
 
         <div
-          class="grid grid-cols-2 sm:grid-cols-3 3xl:grid-cols-4 gap-4 sm:gap-8"
+          class="grid grid-cols-1 sm:grid-cols-3 3xl:grid-cols-4 gap-4 sm:gap-8"
         >
-          {
-            [...PROJECTS_INDEPENDENT_WORKS].map((p) => (
-              <ProjectCard
-                name={p.name}
-                projectLink={p.projectLink}
-                musicLink={p.musicLink}
-                thumbnail={p.thumbnail}
-                description={p.description}
-                client:load
-              />
-            ))
-          }
+          {[...PROJECTS_INDEPENDENT_WORKS].map((p) => <Project project={p} />)}
         </div>
       </div>
     </section>
-  </main>
+  </div>
 </Layout>
