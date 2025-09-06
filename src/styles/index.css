@@ -9,7 +9,7 @@
 
 @layer {
   .responsiveContainer {
-    @apply mx-auto max-w-[450px] content-center px-4 md:max-w-[1000px] lg:max-w-[1000xp] 2xl:max-w-[1000px];
+    @apply mx-auto max-w-[450px] content-center px-4 md:max-w-[1000px] lg:max-w-[1000xp] 2xl:max-w-[1200px];
   }
 }
 
@@ -25,43 +25,6 @@
 
 .text-shadow-white {
   text-shadow: 1px 1px 0.01px #ffffff;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-@keyframes fade-in-first {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in-second {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-fade-in-first {
-  animation: fade-in-first 0.5s ease-in-out forwards;
-}
-
-.animate-fade-in-second {
-  animation: fade-in-second 1.5s ease-in-out forwards;
 }
 
 @font-face {
@@ -133,42 +96,4 @@
   --color-darkBlue: #101033;
   --color-lightBlue: #a3f3ff;
   --color-contrast: #a998c5;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .fixed {
-    position: fixed;
-  }
-
-  body {
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
-/* iOS-specific fixes */
-@supports (-webkit-touch-callout: none) {
-  .overflow-y-auto {
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Prevent overscroll on the body */
-  body {
-    overscroll-behavior-y: none;
-  }
-}
-
-/* Fix 100vh issue on iOS */
-@supports (-webkit-touch-callout: none) {
-  .min-h-full {
-    min-height: -webkit-fill-available;
-  }
-}
-
-@layer base {
-  /* * {
-    @apply border-border outline-ring/50;
-  } */
-  /* body {
-    @apply bg-background text-foreground;
-  } */
 }

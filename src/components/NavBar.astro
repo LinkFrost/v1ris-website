@@ -1,5 +1,15 @@
 ---
-import { NavigationMenu } from "./ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+} from "./ui/navigation-menu";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "./ui/dropdown-menu";
 import HeaderLink from "./HeaderLink.astro";
 
 import Soundcloud from "../../public/svg/soundcloud.svg";
@@ -7,18 +17,19 @@ import Spotify from "../../public/svg/spotify.svg";
 import BandCamp from "../../public/svg/bandcamp.svg";
 import BlueSky from "../../public/svg/bluesky.svg";
 import Instagram from "../../public/svg/instagram.svg";
+import { NavBarDropdown } from "./NavBarDropdown";
 
 const svgColor = "#a3b3ff";
 ---
 
-<header class="flex items-center justify-center bg-black">
-  <NavigationMenu>
-    <div class="flex gap-4 lg:gap-10">
+<header class="flex items-center justify-center bg-black z-10">
+  <div class="flex justify-between responsiveContainer w-full">
+    <div class="flex items-center gap-4 lg:gap-10">
       <HeaderLink href="/">Home</HeaderLink>
 
       <HeaderLink href="/projects">Projects</HeaderLink>
 
-      <HeaderLink href="/violin">Violin</HeaderLink>
+      <NavBarDropdown client:idle />
 
       <HeaderLink href="/about">About</HeaderLink>
 
@@ -34,7 +45,6 @@ const svgColor = "#a3b3ff";
       >
         <Soundcloud fill={svgColor} />
       </a>
-
       <a
         class="hover:scale-125"
         href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH"
@@ -43,7 +53,6 @@ const svgColor = "#a3b3ff";
       >
         <Spotify fill={svgColor} />
       </a>
-
       <a
         class="hover:scale-120"
         href="https://v1ris.bandcamp.com/follow_me"
@@ -52,7 +61,6 @@ const svgColor = "#a3b3ff";
       >
         <BandCamp fill={svgColor} width={50} height={50} />
       </a>
-
       <a
         class="hover:scale-125"
         href="https://bsky.app/profile/v1ris.com"
@@ -61,7 +69,6 @@ const svgColor = "#a3b3ff";
       >
         <BlueSky fill={svgColor} />
       </a>
-
       <a
         class="hover:scale-125"
         href="https://www.instagram.com/v1ris_music/"
@@ -71,5 +78,5 @@ const svgColor = "#a3b3ff";
         <Instagram fill={svgColor} />
       </a>
     </div>
-  </NavigationMenu>
+  </div>
 </header>
