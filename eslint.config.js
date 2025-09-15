@@ -19,6 +19,7 @@ export default tseslint.config(
     ],
     rules: {
       "react/no-unescaped-entities": 0,
+      "@typescript-eslint/no-explicit-any": 0,
       "@typescript-eslint/array-type": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": [
