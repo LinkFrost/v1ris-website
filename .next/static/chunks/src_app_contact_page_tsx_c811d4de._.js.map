@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/ashirimran/Dev/Projects/v1ris-website/src/app/contact/page.tsx"],"sourcesContent":["\"use client\";\n\nimport { z } from \"zod\";\nimport { zodResolver } from \"@hookform/resolvers/zod\";\nimport { useForm } from \"react-hook-form\";\n\nconst formSchema = z.object({\n  email: z.string().email(),\n  name: z.string(),\n  subject: z.string(),\n  details: z.string(),\n});\n\nexport default function Contact() {\n  const form = useForm<z.infer<typeof formSchema>>({\n    resolver: zodResolver(formSchema),\n  });\n\n  return;\n}\n"],"names":[],"mappings":";;;;AAEA;AACA;AACA;;AAJA;;;;AAMA,MAAM,aAAa,4NAAC,CAAC,MAAM,CAAC;IAC1B,OAAO,4NAAC,CAAC,MAAM,GAAG,KAAK;IACvB,MAAM,4NAAC,CAAC,MAAM;IACd,SAAS,4NAAC,CAAC,MAAM;IACjB,SAAS,4NAAC,CAAC,MAAM;AACnB;AAEe,SAAS;;IACtB,MAAM,OAAO,IAAA,qQAAO,EAA6B;QAC/C,UAAU,IAAA,iTAAW,EAAC;IACxB;IAEA;AACF;GANwB;;QACT,qQAAO;;;KADE","debugId":null}}]
+}

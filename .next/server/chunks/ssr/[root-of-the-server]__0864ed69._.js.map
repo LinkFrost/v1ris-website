@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///Users/ashirimran/Dev/Projects/v1ris-website/src/app/contact/page.tsx"],"sourcesContent":["export default function Contact() {\n  return;\n}\n"],"names":[],"mappings":";;;;AAAe,SAAS;IACtB;AACF","debugId":null}}]
+}
