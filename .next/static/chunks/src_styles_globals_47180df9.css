@@ -1217,6 +1217,16 @@
     background-color: var(--color-gray-900);
   }
 
+  .bg-gray-900\/0 {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-gray-900\/0 {
+      background-color: color-mix(in oklab, var(--color-gray-900) 0%, transparent);
+    }
+  }
+
   .bg-gray-900\/80 {
     background-color: rgba(16, 24, 40, .8);
   }
