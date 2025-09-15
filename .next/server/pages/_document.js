@@ -1,5 +1,1 @@
-var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/pages/_document.js")
-R.c("server/chunks/ssr/node_modules__pnpm_5216f168._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__e6a4d965._.js")
-R.m("[project]/node_modules/.pnpm/next@15.5.2_@babel+core@7.28.4_react-dom@19.1.1_react@19.1.1__react@19.1.1/node_modules/next/document.js [ssr] (ecmascript)")
-module.exports=R.m("[project]/node_modules/.pnpm/next@15.5.2_@babel+core@7.28.4_react-dom@19.1.1_react@19.1.1__react@19.1.1/node_modules/next/document.js [ssr] (ecmascript)").exports
+"use strict";(()=>{var a={};a.id=839,a.ids=[839],a.modules={361:a=>{a.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},2015:a=>{a.exports=require("react")},3873:a=>{a.exports=require("path")},8732:a=>{a.exports=require("react/jsx-runtime")}};var b=require("../webpack-runtime.js");b.C(a);var c=b.X(0,[687],()=>b(b.s=9687));module.exports=c})();

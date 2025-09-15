@@ -6,7 +6,7 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import { Button } from "../ui/button";
-import { ExternalLink, Play, Download } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 import type { Project } from "~/lib/consts";
 import { ProjectCard } from "./ProjectCard";
 

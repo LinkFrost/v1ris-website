@@ -18,7 +18,7 @@ import { Button } from "~/components/ui/button";
 import { api } from "~/trpc/react";
 import { formSchema } from "~/lib/consts";
 
-const formInputs: { [key: string]: { label: string; description: string } } = {
+const formInputs: Record<string, { label: string; description: string }> = {
   name: { label: "Name", description: "Your name/username" },
   email: {
     label: "Email Address",

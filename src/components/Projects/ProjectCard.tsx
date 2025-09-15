@@ -49,3 +49,5 @@ export const ProjectCard = React.forwardRef<
     );
   },
 );
+
+ProjectCard.displayName = "ProjectCard";

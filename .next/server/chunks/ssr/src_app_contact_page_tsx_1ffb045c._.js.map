@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/ashirimran/Dev/Projects/v1ris-website/src/app/contact/page.tsx"],"sourcesContent":["\"use client\";\n\nimport { z } from \"zod\";\nimport { zodResolver } from \"@hookform/resolvers/zod\";\nimport { useForm } from \"react-hook-form\";\n\nconst formSchema = z.object({\n  email: z.string().email(),\n  name: z.string(),\n  subject: z.string(),\n  details: z.string(),\n});\n\nexport default function Contact() {\n  const form = useForm<z.infer<typeof formSchema>>({\n    resolver: zodResolver(formSchema),\n  });\n\n  return;\n}\n"],"names":[],"mappings":";;;;AAEA;AACA;AACA;AAJA;;;;AAMA,MAAM,aAAa,yNAAC,CAAC,MAAM,CAAC;IAC1B,OAAO,yNAAC,CAAC,MAAM,GAAG,KAAK;IACvB,MAAM,yNAAC,CAAC,MAAM;IACd,SAAS,yNAAC,CAAC,MAAM;IACjB,SAAS,yNAAC,CAAC,MAAM;AACnB;AAEe,SAAS;IACtB,MAAM,OAAO,IAAA,kQAAO,EAA6B;QAC/C,UAAU,IAAA,8SAAW,EAAC;IACxB;IAEA;AACF","debugId":null}}]
-}
