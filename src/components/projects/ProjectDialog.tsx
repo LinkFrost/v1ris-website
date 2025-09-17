@@ -48,9 +48,14 @@ export const ProjectDialog = ({ project }: { project: Project }) => {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               {musicLink && (
-                <Button className="flex items-center gap-2 bg-indigo-500 text-white hover:bg-indigo-700">
-                  <Play className="h-4 w-4" />
-                  Listen to the Soundtrack
+                <Button
+                  className="flex items-center gap-2 bg-indigo-500 text-white hover:bg-indigo-700"
+                  asChild
+                >
+                  <a href={musicLink} target="_blank" rel="noopener noreferrer">
+                    <Play className="h-4 w-4" />
+                    Listen to the Soundtrack
+                  </a>
                 </Button>
               )}
 

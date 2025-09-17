@@ -44,7 +44,7 @@ const NavLink = ({
     >
       <Link href={href} passHref>
         <span
-          className={`font-nippo text-sm hover:scale-110 hover:border-b-4 hover:border-indigo-300 hover:text-gray-300 sm:text-xl ${isActive ? "border-b-4 border-indigo-300 font-bold text-white" : "text-white"}`}
+          className={`font-nippo text-xl hover:scale-110 hover:border-b-4 hover:border-indigo-300 hover:text-gray-300 ${isActive ? "border-b-4 border-indigo-300 font-bold text-white" : "text-white"}`}
           onClick={handleClick}
         >
           {name}
@@ -149,7 +149,7 @@ export const TopNav = () => {
           </SheetTrigger>
 
           <SheetContent side="top" className="border-0 bg-black text-white">
-            <div className="mt-8 flex w-full flex-col items-center gap-6">
+            <div className="mt-8 mb-8 flex w-full flex-col items-center gap-6">
               <SheetClose asChild>
                 <NavLink
                   href="/"

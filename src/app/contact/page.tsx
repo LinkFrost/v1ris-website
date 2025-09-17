@@ -18,6 +18,7 @@ import { Button } from "~/components/ui/button";
 import { api } from "~/trpc/react";
 import { formSchema } from "~/lib/consts";
 import Link from "next/link";
+import { Textarea } from "~/components/ui/textarea";
 
 const formInputs: Record<string, { label: string; description: string }> = {
   name: { label: "Name", description: "(required)" },
@@ -25,7 +26,7 @@ const formInputs: Record<string, { label: string; description: string }> = {
     label: "Email Address",
     description: "(required)",
   },
-  subject: { label: "Subject", description: "" },
+  subject: { label: "Subject", description: "(required)" },
   details: { label: "Details", description: "(required)" },
 };
 
@@ -52,7 +53,7 @@ export default function Contact() {
         Contact
       </h1>
 
-      <Card className="border-slate-500 bg-gray-900/90 backdrop-blur-sm">
+      <Card className="mb-4 border-slate-500 bg-gray-900/90 backdrop-blur-sm">
         <CardContent className="px-8">
           <Form {...form}>
             <form
@@ -64,7 +65,7 @@ export default function Contact() {
                 you! Be sure to check out how I handle commissions{" "}
                 <Link
                   href="/commissions"
-                  className="underline hover:text-violet-400"
+                  className="text-blue-200 underline hover:text-blue-400"
                 >
                   here
                 </Link>{" "}
@@ -81,7 +82,11 @@ export default function Contact() {
                       <FormLabel>{formInputs[input]?.label}</FormLabel>
 
                       <FormControl>
-                        <Input {...field} />
+                        {input === "details" ? (
+                          <Textarea {...field} className="h-28 resize-none" />
+                        ) : (
+                          <Input {...field} />
+                        )}
                       </FormControl>
 
                       <FormDescription>
