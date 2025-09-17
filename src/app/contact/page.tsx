@@ -49,7 +49,7 @@ export default function Contact() {
 
   return (
     <section className="responsiveContainer flex flex-col gap-4 pt-4">
-      <h1 className="font-nippo text-4xl font-semibold text-gray-900 text-shadow-white">
+      <h1 className="font-nippo text-5xl font-semibold text-gray-900 text-shadow-white">
         Contact
       </h1>
 

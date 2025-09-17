@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section className="responsiveContainer relative z-10 flex w-full flex-col gap-12 pt-4">
       <div className="flex flex-col gap-4">
-        <h1 className="font-nippo text-4xl font-semibold text-gray-900 text-shadow-white">
+        <h1 className="font-nippo text-5xl font-semibold text-gray-900 text-shadow-white">
           Original Soundtracks
         </h1>
 
@@ -20,7 +20,7 @@ export default function Projects() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h1 className="font-nippo text-4xl font-semibold text-gray-900 text-shadow-white">
+        <h1 className="font-nippo text-5xl font-semibold text-gray-900 text-shadow-white">
           Independent Works
         </h1>
 

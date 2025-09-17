@@ -51,15 +51,15 @@ export const PROJECTS_ORIGINAL_SOUNDTRACKS = [
 ];
 
 export const PROJECTS_INDEPENDENT_WORKS = [
-  {
-    name: "Digital Connection",
-    projectLink: "",
-    musicLink: "",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper convallis enim in ultricies. Mauris dictum fermentum mi, vel sagittis nisi finibus eu. Integer tempus quam a condimentum molestie. Mauris pretium efficitur urna in finibus. Pellentesque sodales nisl et diam scelerisque ornare. Proin vel ligula odio. Sed rhoncus mi vel purus rhoncus tempus. Pellentesque pulvinar, est mollis venenatis efficitur, purus lorem dictum ipsum, semper tincidunt dolor felis ut augue. Nullam placerat, dui sit amet posuere varius, velit massa commodo ex, a venenatis dui nulla sed nisl. Fusce vel vulputate diam, non condimentum dui. Sed ut metus ac tellus vulputate mattis vitae non eros. Fusce fringilla varius porttitor. ",
-    thumbnail:
-      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTQbhIasJrp2BtSVW86POZivbeGRLCgnEK7QD4",
-  },
+  // {
+  //   name: "digital connection",
+  //   projectLink: "",
+  //   musicLink: "",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper convallis enim in ultricies. Mauris dictum fermentum mi, vel sagittis nisi finibus eu. Integer tempus quam a condimentum molestie. Mauris pretium efficitur urna in finibus. Pellentesque sodales nisl et diam scelerisque ornare. Proin vel ligula odio. Sed rhoncus mi vel purus rhoncus tempus. Pellentesque pulvinar, est mollis venenatis efficitur, purus lorem dictum ipsum, semper tincidunt dolor felis ut augue. Nullam placerat, dui sit amet posuere varius, velit massa commodo ex, a venenatis dui nulla sed nisl. Fusce vel vulputate diam, non condimentum dui. Sed ut metus ac tellus vulputate mattis vitae non eros. Fusce fringilla varius porttitor. ",
+  //   thumbnail:
+  //     "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTQbhIasJrp2BtSVW86POZivbeGRLCgnEK7QD4",
+  // },
   {
     name: "Starbreak",
     projectLink: "",
