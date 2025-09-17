@@ -20,13 +20,13 @@ import { formSchema } from "~/lib/consts";
 import Link from "next/link";
 
 const formInputs: Record<string, { label: string; description: string }> = {
-  name: { label: "Name", description: "Your name/username" },
+  name: { label: "Name", description: "(required)" },
   email: {
     label: "Email Address",
-    description: "Valid email address that I can reach you back at",
+    description: "(required)",
   },
-  subject: { label: "Subject", description: "The nature of your request" },
-  details: { label: "Details", description: "Self explanatory" },
+  subject: { label: "Subject", description: "" },
+  details: { label: "Details", description: "(required)" },
 };
 
 export default function Contact() {

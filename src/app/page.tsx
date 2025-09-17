@@ -17,7 +17,7 @@ export default async function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="h-[200px] w-full md:h-[500px]"
+            className="h-[200px] w-[853px] md:h-[480px]"
           />
         </div>
       </section>
