@@ -35,7 +35,7 @@ export default async function Home() {
 
           <div className="flex flex-col justify-normal gap-8 lg:justify-between lg:py-12">
             <p className="text-xl text-white">
-              Hi, I&aposm;{" "}
+              Hi, I'm{" "}
               <span className="font-telma text-shadow text-4xl font-semibold text-indigo-300">
                 v1ris
               </span>
@@ -48,7 +48,7 @@ export default async function Home() {
               className="text-shadow text-2xl font-semibold text-indigo-300 hover:underline"
               href="/contact"
             >
-              Let&aposm;s work together!
+              Let's work together!
             </a>
           </div>
         </div>
@@ -83,8 +83,7 @@ export default async function Home() {
 
                 <CardContent className="space-y-6 p-0">
                   <p className="text-beige">
-                    a single from the forthcoming album &quot;digital
-                    connection&quot;
+                    a single from the forthcoming album "digital connection"
                   </p>
 
                   <div className="flex flex-col gap-3 sm:flex-row">
