@@ -12,8 +12,6 @@ export default async function Home() {
           </p>
 
           <iframe
-            // width="1200"
-            // height="700"
             src="https://www.youtube.com/embed/KINzZZeWOqw?si=O5gUmwyltRrVlegA"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
