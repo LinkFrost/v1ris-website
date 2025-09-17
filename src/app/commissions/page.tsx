@@ -81,7 +81,7 @@ export default function Commissions() {
         </Card>
 
         <a
-          className="font-nippo mt-8 text-4xl font-semibold text-gray-900 text-shadow-white hover:text-gray-700 hover:underline"
+          className="font-nippo mt-8 mb-8 text-4xl font-semibold text-gray-900 text-shadow-white hover:text-gray-700 hover:underline"
           href="/contact"
         >
           Interested in working together? Click here!

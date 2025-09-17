@@ -17,6 +17,7 @@ import { Card, CardContent } from "~/components/ui/card";
 import { Button } from "~/components/ui/button";
 import { api } from "~/trpc/react";
 import { formSchema } from "~/lib/consts";
+import Link from "next/link";
 
 const formInputs: Record<string, { label: string; description: string }> = {
   name: { label: "Name", description: "Your name/username" },
@@ -46,14 +47,30 @@ export default function Contact() {
   };
 
   return (
-    <section className="responsiveContainer pt-4">
+    <section className="responsiveContainer flex flex-col gap-4 pt-4">
+      <h1 className="font-nippo text-4xl font-semibold text-gray-900 text-shadow-white">
+        Contact
+      </h1>
+
       <Card className="border-slate-500 bg-gray-900/90 backdrop-blur-sm">
-        <CardContent className="p-8">
+        <CardContent className="px-8">
           <Form {...form}>
             <form
-              className="mb-8 flex flex-col gap-8 text-white"
+              className="flex flex-col gap-8 text-white"
               onSubmit={form.handleSubmit(onSubmit)}
             >
+              <p>
+                Want to work together? Fill out this form and I'll get back to
+                you! Be sure to check out how I handle commissions{" "}
+                <Link
+                  href="/commissions"
+                  className="underline hover:text-violet-400"
+                >
+                  here
+                </Link>{" "}
+                as well.
+              </p>
+
               {Object.keys(formInputs).map((input) => (
                 <FormField
                   key={input}
@@ -76,7 +93,6 @@ export default function Contact() {
                   )}
                 />
               ))}
-
               <Button variant="secondary">Submit</Button>
             </form>
           </Form>

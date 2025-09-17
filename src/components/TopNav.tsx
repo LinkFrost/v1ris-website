@@ -70,10 +70,15 @@ export const TopNav = () => {
     <header className="sticky top-0 z-50 w-full bg-black text-white">
       {/* <div className="responsiveContainer flex w-full justify-between"> */}
       <NavigationMenu>
-        <div className="flex">
-          <nav className="hidden items-center gap-6 md:flex">
+        <div className="flex items-center">
+          <Link href="/" passHref>
+            <span className="font-telma text-shadow mr-8 text-6xl font-semibold text-indigo-300">
+              v1ris
+            </span>
+          </Link>
+          {/* <nav className="hidden items-center gap-6 md:flex">
             <NavLink href="/" name="Home" />
-          </nav>
+          </nav> */}
 
           <nav className="hidden items-center gap-6 md:flex">
             <NavLink href="/projects" name="Projects" />
@@ -143,7 +148,7 @@ export const TopNav = () => {
           <SheetTitle className="sr-only">NavBar Menu</SheetTitle>
 
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-white">
+            <Button variant="ghost" size="icon" className="mt-3 text-white">
               <Menu className="text-accent !h-8 !w-8" />
 
               <span className="sr-only">Toggle menu</span>
