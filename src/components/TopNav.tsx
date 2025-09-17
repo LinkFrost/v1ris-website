@@ -6,7 +6,6 @@ import {
   NavigationMenuLink,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu } from "lucide-react";
@@ -19,11 +18,11 @@ import {
 } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
-import Soundcloud from "../../public/svg/soundcloud.svg";
-import Spotify from "../../public/svg/spotify.svg";
-import BandCamp from "../../public/svg/bandcamp.svg";
-import BlueSky from "../../public/svg/bluesky.svg";
-import Instagram from "../../public/svg/instagram.svg";
+import { BandcampIcon } from "./svg/Bandcamp";
+import { BlueSkyIcon } from "./svg/BlueSky";
+import { SoundcloudIcon } from "./svg/Soundcloud";
+import { SpotifyIcon } from "./svg/Spotify";
+import { InstagramIcon } from "./svg/Instagram";
 
 const NavLink = ({
   href,
@@ -64,11 +63,8 @@ export const TopNav = () => {
     router.push(href);
   };
 
-  const svgColor = "#a3b3ff";
-
   return (
     <header className="sticky top-0 z-50 w-full bg-black text-white">
-      {/* <div className="responsiveContainer flex w-full justify-between"> */}
       <NavigationMenu>
         <div className="flex items-center">
           <Link href="/" passHref>
@@ -76,9 +72,6 @@ export const TopNav = () => {
               v1ris
             </span>
           </Link>
-          {/* <nav className="hidden items-center gap-6 md:flex">
-            <NavLink href="/" name="Home" />
-          </nav> */}
 
           <nav className="hidden items-center gap-6 md:flex">
             <NavLink href="/projects" name="Projects" />
@@ -99,48 +92,48 @@ export const TopNav = () => {
 
         <div className="hidden items-center justify-center gap-4 md:flex">
           <Link
-            className="hover:scale-125"
+            className="text-[#a3b3ff] hover:scale-125"
             href="https://soundcloud.com/v1ris"
             target="_blank"
             aria-label="soundcloud"
           >
-            <Soundcloud fill={svgColor} />
+            <SoundcloudIcon />
           </Link>
 
           <Link
-            className="hover:scale-125"
+            className="text-[#a3b3ff] hover:scale-125"
             href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH"
             target="_blank"
             aria-label="spotify"
           >
-            <Spotify fill={svgColor} />
+            <SpotifyIcon />
           </Link>
 
           <Link
-            className="hover:scale-120"
+            className="text-[#a3b3ff] hover:scale-120"
             href="https://v1ris.bandcamp.com/follow_me"
             target="_blank"
             aria-label="bandcamp"
           >
-            <BandCamp fill={svgColor} width={50} height={50} />
+            <BandcampIcon />
           </Link>
 
           <Link
-            className="hover:scale-125"
+            className="text-[#a3b3ff] hover:scale-125"
             href="https://bsky.app/profile/v1ris.com"
             target="_blank"
             aria-label="bluesky"
           >
-            <BlueSky fill={svgColor} />
+            <BlueSkyIcon />
           </Link>
 
           <Link
-            className="hover:scale-125"
+            className="text-[#a3b3ff] hover:scale-125"
             href="https://www.instagram.com/v1ris_music/"
             target="_blank"
             aria-label="instagram"
           >
-            <Instagram fill={svgColor} />
+            <InstagramIcon />
           </Link>
         </div>
 
@@ -200,54 +193,53 @@ export const TopNav = () => {
 
             <div className="mt-4 flex items-center justify-center gap-4">
               <Link
-                className="hover:scale-125 hover:cursor-grab"
+                className="text-[#a3b3ff] hover:scale-125 hover:cursor-grab"
                 href="https://soundcloud.com/v1ris"
                 target="_blank"
                 aria-label="soundcloud"
               >
-                <Soundcloud fill={svgColor} />
+                <SoundcloudIcon />
               </Link>
 
               <Link
-                className="hover:scale-125 hover:cursor-grab"
+                className="text-[#a3b3ff] hover:scale-125 hover:cursor-grab"
                 href="https://open.spotify.com/artist/3QAWVvdQIrW5GGXjhXT5tH"
                 target="_blank"
                 aria-label="spotify"
               >
-                <Spotify fill={svgColor} />
+                <SpotifyIcon />
               </Link>
 
               <Link
-                className="hover:scale-120 hover:cursor-grab"
+                className="text-[#a3b3ff] hover:scale-120 hover:cursor-grab"
                 href="https://v1ris.bandcamp.com/follow_me"
                 target="_blank"
                 aria-label="bandcamp"
               >
-                <BandCamp fill={svgColor} width={50} height={50} />
+                <BandcampIcon />
               </Link>
 
               <Link
-                className="hover:scale-125 hover:cursor-grab"
+                className="text-[#a3b3ff] hover:scale-125 hover:cursor-grab"
                 href="https://bsky.app/profile/v1ris.com"
                 target="_blank"
                 aria-label="bluesky"
               >
-                <BlueSky fill={svgColor} />
+                <BlueSkyIcon />
               </Link>
 
               <Link
-                className="hover:scale-125 hover:cursor-grab"
+                className="text-[#a3b3ff] hover:scale-125 hover:cursor-grab"
                 href="https://www.instagram.com/v1ris_music/"
                 target="_blank"
                 aria-label="instagram"
               >
-                <Instagram fill={svgColor} />
+                <InstagramIcon />
               </Link>
             </div>
           </SheetContent>
         </Sheet>
       </NavigationMenu>
-      {/* </div> */}
     </header>
   );
 };

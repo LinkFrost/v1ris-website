@@ -1,4 +1,4 @@
-import { ProjectDialog } from "~/components/Projects/ProjectDialog";
+import { ProjectDialog } from "~/components/projects/ProjectDialog";
 import {
   PROJECTS_INDEPENDENT_WORKS,
   PROJECTS_ORIGINAL_SOUNDTRACKS,
