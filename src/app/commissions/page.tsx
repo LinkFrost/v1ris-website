@@ -19,9 +19,15 @@ export default function Commissions() {
               Starting at $100 per minute of music
             </p>
 
+            <ul className="mb-4 ml-8 list-disc">
+              <li className="text-l text-white">
+                Live Instrumentalist: +$50-100 per player (upon request only)
+              </li>
+            </ul>
+
             <div className="flex justify-center">
               <iframe
-                src="https://www.youtube.com/embed/KINzZZeWOqw?si=O5gUmwyltRrVlegA"
+                src="https://www.youtube.com/embed/t_cWwn1Rwww?si=U9JKXABAtMoj_OJI"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -31,13 +37,23 @@ export default function Commissions() {
             </div>
 
             <p className="text-lg text-white sm:text-xl">
+              Time taken to deliver will be around 2-4 weeks.
+              Rewrite requests are accepted!
+            </p>
+
+            <p className="text-lg text-white sm:text-xl">
               When writing for games, my rate includes implementation through
               FMOD or Wwise if desired. I am available for multiple tracks or a
               full game scoring project.
             </p>
 
+
+
             <p className="text-lg text-white sm:text-xl">
-              My base rate is flexible, so please feel free to reach out
+              <span className="font-azaret text-white font-semibold italic">
+                My base rate is flexible,
+              </span>
+              {" "} so please feel free to reach out
               directly, and we can work out the specifics!
             </p>
 
@@ -57,7 +73,11 @@ export default function Commissions() {
             <p className="text-azaret text-xl text-white italic">
               Starting at $75 per minute of music
             </p>
-
+            <ul className="mb-4 ml-8 list-disc">
+              <li className="text-l text-white">
+                Live Instrumentalist: +$50-100 per player (upon request only)
+              </li>
+            </ul>
             <div className="flex justify-center">
               <iframe
                 src="https://www.youtube.com/embed/nxEUiY9p5mw?si=bs7ltHFfMihkpxa-"
@@ -68,7 +88,9 @@ export default function Commissions() {
                 className="h-[200px] w-full max-w-[853px] md:h-[480px]"
               />
             </div>
-
+            <p className="text-lg text-white sm:text-xl">
+              One remix of an existing song of your choice!
+            </p>
             <a
               className="font-azaret mt-4 text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
               href="/contact"
@@ -100,8 +122,7 @@ export default function Commissions() {
               </li>
 
               <li className="text-l text-white">
-                Part Writing: +$25 per minute if part is not notated, or does
-                not have a midi mockup
+                Part Writing: +$25 per minute if part is not written at all (no score or midi mockup)
               </li>
             </ul>
 
@@ -120,6 +141,13 @@ export default function Commissions() {
               I’d love to play violin on your project, whatever score or song it
               may be!
             </p>
+
+            <a
+              className="font-azaret mt-4 text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
+              href="/contact"
+            >
+              Click here to contact!
+            </a>
 
             <p className="text-white">
               Performed as a part of these orchestras:
@@ -140,13 +168,6 @@ export default function Commissions() {
               />
               <p className=""></p>
             </div>
-
-            <a
-              className="font-azaret mt-4 text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
-              href="/contact"
-            >
-              Click here to contact!
-            </a>
           </CardContent>
         </Card>
       </div>
