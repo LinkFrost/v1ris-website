@@ -19,6 +19,8 @@ import { api } from "~/trpc/react";
 import { formSchema } from "~/lib/consts";
 import Link from "next/link";
 import { Textarea } from "~/components/ui/textarea";
+import { toast, Toaster } from "sonner";
+import { env } from "~/env";
 
 const formInputs: Record<string, { label: string; description: string }> = {
   name: { label: "Name", description: "(required)" },
@@ -31,7 +33,7 @@ const formInputs: Record<string, { label: string; description: string }> = {
 };
 
 export default function Contact() {
-  const { mutate, error } = api.email.sendContactEmail.useMutation();
+  const { mutate, error, isPending } = api.email.sendContactEmail.useMutation();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -44,7 +46,17 @@ export default function Contact() {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    mutate(values);
+    mutate(values, {
+      onSuccess: () => {
+        console.log("Email sent successfully");
+        toast.success("Email sent successfully");
+      },
+      onError: () => {
+        toast.error(
+          `Ran into an error sending the email. Please try again or email me directly at ${env.GMAIL_APP_TO_EMAIL}`,
+        );
+      },
+    });
   };
 
   return (
@@ -98,7 +110,9 @@ export default function Contact() {
                   )}
                 />
               ))}
-              <Button variant="secondary">Submit</Button>
+              <Button variant="secondary" disabled={isPending}>
+                Submit
+              </Button>
             </form>
           </Form>
 

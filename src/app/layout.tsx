@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { TRPCReactProvider } from "~/trpc/react";
 import { TopNav } from "~/components/TopNav";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "v1ris",
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className="font-azeret bg-indigo-300 text-base">
       <body className="relative flex min-h-screen flex-col justify-center bg-[url(/img/starbreak.png)] bg-cover bg-local bg-center align-middle">
         <div className="pointer-events-none absolute inset-0 bg-[#a3b3ff]/80"></div>
+        <Toaster position="top-right" />
 
         <TRPCReactProvider>
           <TopNav />
