@@ -2,7 +2,7 @@ import { Card, CardContent } from "~/components/ui/card";
 
 export default function Commissions() {
   return (
-    <section className="responsiveContainer relative z-10 flex w-full flex-col gap-12 pt-4">
+    <section className="responsiveContainer relative z-10 mb-8 flex w-full flex-col gap-12 pt-4">
       <div className="flex flex-col gap-4">
         <h1 className="font-nippo text-4xl font-semibold text-gray-900 text-shadow-white sm:text-5xl">
           Music Composition
