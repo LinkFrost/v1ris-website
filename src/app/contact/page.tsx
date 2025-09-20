@@ -65,7 +65,7 @@ export default function Contact() {
         Contact
       </h1>
 
-      <Card className="mb-4 border-slate-500 bg-gray-900/90 backdrop-blur-sm">
+      <Card className="mb-4 border-slate-500 bg-gray-900/70 backdrop-blur-sm">
         <CardContent className="px-8">
           <Form {...form}>
             <form

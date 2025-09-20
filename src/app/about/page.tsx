@@ -7,7 +7,7 @@ export default function About() {
       style={{ minHeight: "calc(100vh - 96px)" }}
     >
       <section className="responsiveContainer relative z-10 pt-4 text-xl sm:pt-0">
-        <Card className="border-slate-500 bg-gray-900/90 backdrop-blur-sm">
+        <Card className="border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex flex-col items-center gap-8 lg:flex-row">
               <div className="flex-shrink-0">
@@ -20,7 +20,7 @@ export default function About() {
               </div>
 
               <div className="flex-1 space-y-6 text-center lg:text-left">
-                <div className="space-y-6 leading-relaxed text-slate-200">
+                <div className="space-y-6 text-left text-slate-200">
                   <p>
                     Hi! When I’m not going by the name v1ris, my name is Anna
                     Iris Hill. I was born in Canada, and I'm currently based in

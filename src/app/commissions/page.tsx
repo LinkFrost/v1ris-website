@@ -8,7 +8,7 @@ export default function Commissions() {
           Music Composition
         </h1>
 
-        <Card className="border-slate-500 bg-gray-900/80 backdrop-blur-sm">
+        <Card className="border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
             <p className="text-azaret text-3xl text-white">
               Original Music{" "}
@@ -37,8 +37,8 @@ export default function Commissions() {
             </div>
 
             <p className="text-lg text-white sm:text-xl">
-              Time taken to deliver will be around 2-4 weeks.
-              Rewrite requests are accepted!
+              Time taken to deliver will be around 2-4 weeks. Rewrite requests
+              are accepted!
             </p>
 
             <p className="text-lg text-white sm:text-xl">
@@ -47,14 +47,12 @@ export default function Commissions() {
               full game scoring project.
             </p>
 
-
-
             <p className="text-lg text-white sm:text-xl">
-              <span className="font-azaret text-white font-semibold italic">
+              <span className="font-azaret font-semibold text-white italic">
                 My base rate is flexible,
-              </span>
-              {" "} so please feel free to reach out
-              directly, and we can work out the specifics!
+              </span>{" "}
+              so please feel free to reach out directly, and we can work out the
+              specifics!
             </p>
 
             <a
@@ -66,7 +64,7 @@ export default function Commissions() {
           </CardContent>
         </Card>
 
-        <Card className="border-slate-500 bg-gray-900/80 backdrop-blur-sm">
+        <Card className="border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
             <p className="text-azaret text-3xl text-white">Remix/Arrangement</p>
 
@@ -106,7 +104,7 @@ export default function Commissions() {
           Violin Performance
         </h1>
 
-        <Card className="border-slate-500 bg-gray-900/80 backdrop-blur-sm">
+        <Card className="border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-4 sm:px-8">
             <p className="text-azaret text-3xl text-white">
               Studio Violin Recording
@@ -122,7 +120,8 @@ export default function Commissions() {
               </li>
 
               <li className="text-l text-white">
-                Part Writing: +$25 per minute if part is not written at all (no score or midi mockup)
+                Part Writing: +$25 per minute if part is not written at all (no
+                score or midi mockup)
               </li>
             </ul>
 

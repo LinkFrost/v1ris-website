@@ -22,7 +22,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-900/90 py-8">
+      <section className="bg-gray-900/70 py-8">
         <div className="responsiveContainer flex flex-col items-center gap-4 lg:flex-row lg:items-start lg:gap-24">
           <img
             className="rounded-full border-4 border-indigo-300 transition-opacity ease-in-out"
