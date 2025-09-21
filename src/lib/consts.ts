@@ -63,10 +63,10 @@ export const PROJECTS_INDEPENDENT_WORKS = [
   {
     name: "Starbreak",
     projectLink: "",
-    musicLink: "https://soundcloud.com/v1ris/sets/starbreak?si=74fe501854b3493f833f9a73c8bd05e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-    description:
-      "Genre: EDM, Drum & Bass, Future Bass",
+    musicLink:
+      "https://soundcloud.com/v1ris/sets/starbreak?si=74fe501854b3493f833f9a73c8bd05e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    description: "Genre: EDM, Drum & Bass, Future Bass",
     thumbnail:
-      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTOzqPcJnpMqrvkOXKHxlYeVQc9D10PnbGW6Eu",
+      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTGn6BhmNa7NsBnw6gmpMXltky2e8vfHIGurRW",
   },
 ];
