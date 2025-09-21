@@ -68,9 +68,11 @@ export const TopNav = () => {
       <NavigationMenu>
         <div className="flex items-center">
           <Link href="/" passHref>
-            <span className="font-telma text-shadow mr-8 text-6xl font-semibold text-indigo-300">
-              v1ris
-            </span>
+            <div className="flex flex-col items-start">
+              <span className="font-telma text-shadow mr-8 text-6xl font-semibold text-indigo-300">
+                v1ris
+              </span>
+            </div>
           </Link>
 
           <nav className="hidden items-center gap-6 md:flex">

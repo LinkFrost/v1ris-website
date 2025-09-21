@@ -1,15 +1,18 @@
 import { Play } from "lucide-react";
+import Image from "next/image";
 import { Button } from "~/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "~/components/ui/card";
 
 export default async function Home() {
   return (
     <div className="relative z-10">
-      <section className="pt-4 pb-8">
+      <section className="pt-8 pb-8">
         <div className="responsiveContainer flex flex-col items-center justify-center gap-4">
-          <p className="font-nippo py-4 text-2xl font-semibold text-gray-900 text-shadow-white sm:text-6xl">
-            Storytelling Through Sound
-          </p>
+          <div className="bg-gradient-to-r from-[#87c7ff] to-[#D4CAF2] bg-clip-text text-transparent">
+            <p className="font-nippo text-center text-2xl font-semibold sm:text-5xl">
+              Composer, Music Producer & Violinist
+            </p>
+          </div>
 
           <iframe
             src="https://www.youtube.com/embed/KINzZZeWOqw?si=O5gUmwyltRrVlegA"
@@ -22,16 +25,21 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-900/70 py-8">
-        <div className="responsiveContainer flex flex-col items-center gap-4 lg:flex-row lg:items-start lg:gap-24">
-          <img
+      <section className="bg-gray-900/90 py-8">
+        <div className="responsiveContainer flex flex-col items-center gap-4 sm:items-start lg:flex-row lg:gap-24 lg:py-12">
+          <Image
             className="rounded-full border-4 border-indigo-300 transition-opacity ease-in-out"
-            width="300px"
-            src="img/headshot.png"
+            height={300}
+            width={300}
+            src="/img/headshot.png"
             alt="v1ris headshot"
           />
 
-          <div className="flex flex-col justify-normal gap-8 lg:justify-between lg:py-12">
+          <div className="flex flex-col justify-normal gap-8 lg:justify-between">
+            <p className="font-telma text-2xl font-semibold text-white sm:text-5xl">
+              Storytelling Through Sound
+            </p>
+
             <p className="text-xl text-white">
               Hi, I'm{" "}
               <span className="font-telma text-shadow text-4xl font-semibold text-indigo-300">
@@ -54,11 +62,11 @@ export default async function Home() {
 
       <section className="py-8">
         <div className="responsiveContainer flex flex-col gap-8">
-          <p className="font-nippo text-4xl font-semibold text-gray-900 text-shadow-white">
-            New Releases
-          </p>
+          <Card className="mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
+            <p className="font-nippo text-shadow -mb-8 ml-8 text-4xl font-semibold text-white">
+              New Releases
+            </p>
 
-          <Card className="mx-auto overflow-hidden border-slate-500 bg-black/40 backdrop-blur-sm">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <div className="relative aspect-square p-8">

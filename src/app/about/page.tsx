@@ -7,7 +7,7 @@ export default function About() {
       style={{ minHeight: "calc(100vh - 96px)" }}
     >
       <section className="responsiveContainer relative z-10 pt-4 text-xl sm:pt-0">
-        <Card className="border-slate-500 bg-gray-900/70 backdrop-blur-sm">
+        <Card className="mb-4 border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex flex-col items-center gap-8 lg:flex-row">
               <div className="flex-shrink-0">

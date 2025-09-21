@@ -28,7 +28,7 @@ export const ProjectCard = React.forwardRef<
   ) => {
     return (
       <button ref={ref} className="h-full w-full text-left" {...props}>
-        <Card className="group flex h-full w-full flex-col overflow-hidden border-slate-500 bg-gray-900/80 p-0 pb-6 text-left backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <Card className="group flex h-full w-full flex-col overflow-hidden border-slate-500 bg-indigo-950/80 p-0 pb-6 text-left backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
           <div className="relative aspect-video overflow-hidden">
             <img
               src={thumbnail}
