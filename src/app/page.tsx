@@ -26,7 +26,7 @@ export default async function Home() {
       </section>
 
       <section className="bg-gray-900/90 py-8">
-        <div className="responsiveContainer flex flex-col items-center gap-4 sm:items-start lg:flex-row lg:gap-24 lg:py-12">
+        <div className="responsiveContainer flex flex-col items-center gap-4 lg:flex-row lg:gap-24 lg:py-12">
           <Image
             className="rounded-full border-4 border-indigo-300 transition-opacity ease-in-out"
             height={300}
@@ -63,7 +63,7 @@ export default async function Home() {
       <section className="py-8">
         <div className="responsiveContainer flex flex-col gap-8">
           <Card className="mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
-            <p className="font-crimson text-shadow -mb-8 ml-8 text-4xl font-semibold text-white">
+            <p className="font-crimson text-shadow -mb-8 ml-8 text-5xl font-semibold text-white">
               New Releases
             </p>
 

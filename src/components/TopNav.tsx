@@ -75,24 +75,24 @@ export const TopNav = () => {
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-6 lg:flex">
             <NavLink href="/projects" name="Projects" />
           </nav>
 
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-6 lg:flex">
             <NavLink href="/commissions" name="Commissions" />
           </nav>
 
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-6 lg:flex">
             <NavLink href="/about" name="About" />
           </nav>
 
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-6 lg:flex">
             <NavLink href="/contact" name="Contact" />
           </nav>
         </div>
 
-        <div className="hidden items-center justify-center gap-4 md:flex">
+        <div className="hidden items-center justify-center gap-4 lg:flex">
           <Link
             className="text-[#a3b3ff] hover:scale-125"
             href="https://soundcloud.com/v1ris"
@@ -142,7 +142,7 @@ export const TopNav = () => {
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTitle className="sr-only">NavBar Menu</SheetTitle>
 
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon" className="mt-3 text-white">
               <Menu className="text-accent !h-8 !w-8" />
 
