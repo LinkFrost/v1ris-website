@@ -31,7 +31,7 @@ export default function Commissions() {
                 className="aspect-video w-full max-w-[544px]"
               />
 
-              <div className="flex flex-col gap-4">
+              <div className="flex w-full flex-col gap-4">
                 <p className="text-lg text-white sm:text-xl">
                   Time taken to deliver will be around 2-4 weeks. Rewrite
                   requests are accepted!
