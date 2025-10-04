@@ -90,13 +90,11 @@ export default function Commissions() {
                 <p className="text-lg text-white sm:text-xl">
                   One remix of an existing song of your choice!
                 </p>
-
                 <p className="text-lg text-white sm:text-xl">
-                  One remix of an existing song of your choice!
+                  Similarly to commissioning an original track, the timeframe for delivery would be around 2-4 weeks.
                 </p>
-
-                <p className="text-lg text-white sm:text-xl">
-                  One remix of an existing song of your choice!
+                <p className="text-lg text-white sm:text-xl italic">
+                  Note: Unless you have the rights to the original track, you most likely are not able to use the resulting remix for commercial purposes.
                 </p>
               </div>
             </div>
