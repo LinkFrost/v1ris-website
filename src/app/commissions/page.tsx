@@ -170,7 +170,7 @@ export default function Commissions() {
             </div>
 
             <a
-              className="font-azaret text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
+              className="font-azaret mt-4 text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
               href="/contact"
             >
               Click here to contact!
