@@ -44,7 +44,7 @@ const NavLink = ({
     >
       <Link href={href} passHref>
         <span
-          className={`font-nippo text-xl hover:scale-110 hover:border-b-4 hover:border-indigo-300 hover:text-gray-300 ${isActive ? "border-b-4 border-indigo-300 font-bold text-white" : "text-white"}`}
+          className={`font-azaretmono text-xl font-semibold hover:scale-110 hover:border-b-4 hover:border-indigo-300 hover:text-gray-300 ${isActive ? "border-b-4 border-indigo-300 font-bold text-white" : "text-white"}`}
           onClick={handleClick}
         >
           {name}
