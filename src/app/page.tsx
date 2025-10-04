@@ -8,7 +8,7 @@ export default async function Home() {
     <div className="relative z-10">
       <section className="pt-8 pb-8">
         <div className="responsiveContainer flex flex-col items-center justify-center gap-4">
-          <p className="text-shadow mb-4font-AzaretMono text-center text-2xl font-semibold text-white sm:text-5xl">
+          <p className="text-shadow font-AzaretMono mb-4 text-center text-2xl font-semibold text-white sm:text-5xl">
             Composer, Music Producer & Violinist
           </p>
 
