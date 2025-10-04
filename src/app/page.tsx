@@ -63,7 +63,7 @@ export default async function Home() {
       <section className="py-8">
         <div className="responsiveContainer flex flex-col gap-8">
           <Card className="mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
-            <p className="font-nippo text-shadow -mb-8 ml-8 text-4xl font-semibold text-white">
+            <p className="font-crimson text-shadow -mb-8 ml-8 text-4xl font-semibold text-white">
               New Releases
             </p>
 
