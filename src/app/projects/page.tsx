@@ -10,8 +10,8 @@ export default function Projects() {
     <section className="responsiveContainer relative z-10 flex w-full flex-col gap-12 pt-4">
       <div className="mb-4 flex flex-col gap-8">
         <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
-          <CardContent className="flex flex-col gap-4 px-8">
-            <h1 className="font-crimson text-shadow text-3xl text-white sm:text-5xl">
+          <CardContent className="flex flex-col gap-8 px-">
+            <h1 className="font-AzaretMono text-shadow font-semibold text-3xl text-white sm:text-5xl">
               Original Soundtracks
             </h1>
             <div className="3xl:grid-cols-4 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-8">
@@ -23,8 +23,8 @@ export default function Projects() {
         </Card>
 
         <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
-          <CardContent className="flex flex-col gap-4 px-8">
-            <h1 className="font-crimson text-shadow text-3xl text-white sm:text-5xl">
+          <CardContent className="flex flex-col gap-8 px-8">
+            <h1 className="font-AzaretMono text-shadow font-semibold text-3xl text-white sm:text-5xl">
               Independent Works
             </h1>
 

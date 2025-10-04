@@ -8,7 +8,7 @@ import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "v1ris",
   description:
-    "Portfolio for v1ris, a composer writing interactive music for narrative-driven games.",
+    "v1ris is a composer writing interactive music for narrative-driven games.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

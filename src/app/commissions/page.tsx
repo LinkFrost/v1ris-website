@@ -6,9 +6,9 @@ export default function Commissions() {
       <div className="flex flex-col gap-4">
         <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
-            <p className="text-azaret text-3xl text-white">
+            <p className="text-azaret font-semibold text-3xl text-white">
               Original Music{" "}
-              <span className="text-2xl">(Song, background music, etc.)</span>
+              <span className="text-2xl">(song, background music, etc.)</span>
             </p>
 
             <p className="text-azaret text-xl text-white italic">
@@ -64,7 +64,7 @@ export default function Commissions() {
 
         <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
-            <p className="text-azaret text-3xl text-white">Remix/Arrangement</p>
+            <p className="text-azaret font-semibold text-3xl text-white">Remix/Arrangement</p>
 
             <p className="text-azaret text-xl text-white italic">
               Starting at $75 per minute of music
@@ -90,13 +90,11 @@ export default function Commissions() {
                 <p className="text-lg text-white sm:text-xl">
                   One remix of an existing song of your choice!
                 </p>
-
                 <p className="text-lg text-white sm:text-xl">
-                  One remix of an existing song of your choice!
+                  Similarly to commissioning an original track, the timeframe for delivery would be around 2-4 weeks.
                 </p>
-
-                <p className="text-lg text-white sm:text-xl">
-                  One remix of an existing song of your choice!
+                <p className="text-lg text-white sm:text-xl italic">
+                  Note: Unless you have the rights to the original track, you most likely are not able to use the resulting remix for commercial purposes.
                 </p>
               </div>
             </div>
@@ -112,7 +110,7 @@ export default function Commissions() {
 
         <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-4 sm:px-8">
-            <p className="text-azaret text-2xl text-white sm:text-3xl">
+            <p className="text-azaret font-semibold text-2xl text-white sm:text-3xl">
               Studio Violin Recording
             </p>
 

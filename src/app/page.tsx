@@ -8,8 +8,8 @@ export default async function Home() {
     <div className="relative z-10">
       <section className="pt-8 pb-8">
         <div className="responsiveContainer flex flex-col items-center justify-center gap-4">
-          <div className="gradient-text-shadow mb-4">
-            <p className="font-nippo text-center text-2xl font-semibold sm:text-5xl">
+          <div className="text-white text-shadow mb-4">
+            <p className="font-AzaretMono text-center text-2xl font-semibold sm:text-5xl">
               Composer, Music Producer & Violinist
             </p>
           </div>
@@ -63,7 +63,7 @@ export default async function Home() {
       <section className="py-8">
         <div className="responsiveContainer flex flex-col gap-8">
           <Card className="mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
-            <p className="font-crimson text-shadow -mb-8 ml-8 text-5xl font-semibold text-white">
+            <p className="font-azaretmono text-shadow -mb-8 ml-8 text-5xl font-semibold text-white">
               New Releases
             </p>
 

@@ -23,7 +23,7 @@ export interface Project {
 
 export const PROJECTS_ORIGINAL_SOUNDTRACKS = [
   {
-    name: "Rope Tool",
+    name: "Project Rope Tool",
     projectLink: "https://xandergoodwin.itch.io/rope-tool",
     musicLink: "",
     description: "DIY your own spaceship to defeat an immortal space CEO.",
