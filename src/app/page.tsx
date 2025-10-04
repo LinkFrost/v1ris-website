@@ -8,11 +8,9 @@ export default async function Home() {
     <div className="relative z-10">
       <section className="pt-8 pb-8">
         <div className="responsiveContainer flex flex-col items-center justify-center gap-4">
-          <div className="text-white text-shadow mb-4">
-            <p className="font-AzaretMono text-center text-2xl font-semibold sm:text-5xl">
-              Composer, Music Producer & Violinist
-            </p>
-          </div>
+          <p className="text-shadow mb-4font-AzaretMono text-center text-2xl font-semibold text-white sm:text-5xl">
+            Composer, Music Producer & Violinist
+          </p>
 
           <iframe
             src="https://www.youtube.com/embed/KINzZZeWOqw?si=O5gUmwyltRrVlegA"
