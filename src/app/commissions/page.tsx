@@ -64,7 +64,7 @@ export default function Commissions() {
 
         <Card className="motion-preset-fade-lg motion-preset-slide-right-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
-            <p className="text-azaret text-3xl font-semibold text-white">
+            <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
               Remix/Arrangement
             </p>
 
