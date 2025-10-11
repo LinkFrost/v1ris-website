@@ -17,12 +17,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="font-azeret bg-indigo-300 text-base">
-      <body className="relative flex min-h-screen flex-col justify-center bg-[url(/img/starbreak.png)] bg-cover bg-local bg-center align-middle">
-        <div className="pointer-events-none absolute inset-0"></div>
+      <body className="relative flex min-h-screen flex-col justify-center bg-[url(/img/starbreak_low.jpg)] bg-cover bg-local bg-center align-middle">
+        <div className="pointer-events-none absolute inset-0" />
+
         <Toaster position="top-right" />
 
         <TRPCReactProvider>
           <TopNav />
+
           <main className="z-[1] flex-1">{children}</main>
         </TRPCReactProvider>
       </body>

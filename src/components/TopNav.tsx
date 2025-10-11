@@ -64,12 +64,12 @@ export const TopNav = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-black text-white">
+    <header className="motion-preset-slide-down sticky top-0 z-50 w-full bg-black text-white">
       <NavigationMenu>
         <div className="flex items-center">
           <Link href="/" passHref>
             <div className="flex flex-col items-start">
-              <span className="font-telma text-shadow mr-8 text-6xl font-semibold text-indigo-300">
+              <span className="font-telma text-shadow motion-preset-slide-right mr-8 text-6xl font-semibold text-indigo-300">
                 v1ris
               </span>
             </div>
@@ -92,7 +92,7 @@ export const TopNav = () => {
           </nav>
         </div>
 
-        <div className="hidden items-center justify-center gap-4 lg:flex">
+        <div className="motion-preset-slide-left hidden items-center justify-center gap-4 lg:flex">
           <Link
             className="text-[#a3b3ff] hover:scale-125"
             href="https://soundcloud.com/v1ris"

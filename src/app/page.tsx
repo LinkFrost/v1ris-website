@@ -8,7 +8,7 @@ export default async function Home() {
     <div className="relative z-10">
       <section className="pt-8 pb-8">
         <div className="responsiveContainer flex flex-col items-center justify-center gap-4">
-          <p className="text-shadow font-AzaretMono mb-4 text-center text-2xl font-semibold text-white sm:text-5xl">
+          <p className="text-shadow font-AzaretMono motion-preset-fade-md motion-preset-slide-down-lg motion-duration-1000 mb-4 text-center text-2xl font-semibold text-white sm:text-5xl">
             Composer, Music Producer & Violinist
           </p>
 
@@ -18,7 +18,7 @@ export default async function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="h-[200px] w-full max-w-[853px] md:h-[480px]"
+            className="motion-preset-fade-md motion-preset-slide-up-md motion-duration-500 h-[200px] w-full max-w-[853px] md:h-[480px]"
           />
         </div>
       </section>
@@ -26,7 +26,7 @@ export default async function Home() {
       <section className="bg-gray-900/90 py-8">
         <div className="responsiveContainer flex flex-col items-center gap-4 lg:flex-row lg:gap-24 lg:py-12">
           <Image
-            className="rounded-full border-4 border-indigo-300 transition-opacity ease-in-out"
+            className="motion-preset-fade-lg motion-preset-slide-right-md motion-duration-1000 rounded-full border-4 border-indigo-300 transition-opacity ease-in-out"
             height={300}
             width={300}
             src="/img/headshot.png"
@@ -34,11 +34,11 @@ export default async function Home() {
           />
 
           <div className="flex flex-col justify-normal gap-8 lg:justify-between">
-            <p className="font-telma text-2xl font-semibold text-white sm:text-5xl">
+            <p className="font-telma motion-preset-fade-lg motion-preset-slide-left-md motion-duration-1000 text-2xl font-semibold text-white sm:text-5xl">
               Storytelling Through Sound
             </p>
 
-            <p className="text-xl text-white">
+            <p className="motion-preset-fade-lg motion-preset-slide-right-md motion-duration-1000 text-xl text-white">
               Hi, I'm{" "}
               <span className="font-telma text-shadow text-4xl font-semibold text-indigo-300">
                 v1ris
@@ -49,7 +49,7 @@ export default async function Home() {
             </p>
 
             <a
-              className="text-shadow text-2xl font-semibold text-indigo-300 hover:underline"
+              className="text-shadow motion-preset-fade-lg motion-preset-slide-left-md motion-duration-1000 text-2xl font-semibold text-indigo-300 hover:underline"
               href="/contact"
             >
               Let's work together!
@@ -60,7 +60,7 @@ export default async function Home() {
 
       <section className="py-8">
         <div className="responsiveContainer flex flex-col gap-8">
-          <Card className="mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
+          <Card className="motion-preset-fade-lg motion-preset-slide-up-lg motion-duration-1800 mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
             <p className="font-azaretmono text-shadow -mb-8 ml-8 text-5xl font-semibold text-white">
               New Releases
             </p>
