@@ -65,7 +65,7 @@ export default function Contact() {
       style={{ minHeight: "calc(100vh - 96px)" }}
     >
       <section className="responsiveContainer flex flex-col gap-4 pt-4">
-        <Card className="mb-4 border-slate-500 bg-gray-900/70 backdrop-blur-sm">
+        <Card className="motion-preset-slide-up-md motion-duration-1000 motion-preset-fade-lg mb-4 border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="px-8">
             <Form {...form}>
               <form

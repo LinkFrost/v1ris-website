@@ -7,12 +7,12 @@ export default function About() {
       style={{ minHeight: "calc(100vh - 96px)" }}
     >
       <section className="responsiveContainer relative z-10 pt-4 text-xl sm:pt-0">
-        <Card className="mb-4 border-slate-500 bg-gray-900/70 backdrop-blur-sm">
+        <Card className="motion-preset-slide-up-md motion-duration-1000 motion-preset-fade-lg mb-4 border-slate-500 bg-gray-900/70 backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex flex-col items-center gap-8 lg:flex-row">
               <div className="flex-shrink-0">
                 <img
-                  className="rounded-full border-4 border-indigo-300 transition-opacity ease-in-out"
+                  className="motion-preset-slide-right-md motion-duration-1200 rounded-full border-4 border-indigo-300 transition-opacity"
                   width="300px"
                   src="img/headshot.png"
                   alt="v1ris headshot"

@@ -4,7 +4,7 @@ export default function Commissions() {
   return (
     <section className="responsiveContainer relative z-10 mb-8 flex w-full flex-col gap-12 pt-4">
       <div className="flex flex-col gap-4">
-        <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
+        <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
             <p className="text-azaret text-3xl font-semibold text-white">
               Original Music{" "}
@@ -62,7 +62,7 @@ export default function Commissions() {
           </CardContent>
         </Card>
 
-        <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
+        <Card className="motion-preset-fade-lg motion-preset-slide-right-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
             <p className="text-azaret text-3xl font-semibold text-white">
               Remix/Arrangement
@@ -113,7 +113,7 @@ export default function Commissions() {
           </CardContent>
         </Card>
 
-        <Card className="border-slate-500 bg-gray-900/65 backdrop-blur-sm">
+        <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-4 sm:px-8">
             <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
               Studio Violin Recording
