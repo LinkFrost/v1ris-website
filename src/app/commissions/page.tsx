@@ -6,7 +6,7 @@ export default function Commissions() {
       <div className="flex flex-col gap-4">
         <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
-            <p className="text-azaret text-3xl font-semibold text-white">
+            <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
               Original Music{" "}
               <span className="text-2xl">(song, background music, etc.)</span>
             </p>
@@ -157,17 +157,14 @@ export default function Commissions() {
                 <div className="flex flex-col gap-8 sm:flex-row">
                   <img
                     src="img/aot.jpg"
-                    width="250px"
                     alt="Attack on Titan - Beyond The Walls World Tour"
-                    className="text-shadow-black"
+                    className="w-full flex-1 object-cover text-shadow-black"
                   />
                   <img
                     src="img/hso.png"
-                    width="250px"
                     alt="Hartford Symphony Orchestra"
-                    className="text-shadow-black"
+                    className="w-full flex-1 object-cover text-shadow-black"
                   />
-                  <p className=""></p>
                 </div>
               </div>
             </div>
