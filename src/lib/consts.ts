@@ -31,6 +31,24 @@ export const PROJECTS_ORIGINAL_SOUNDTRACKS = [
       "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTmYJCu8DNntsBvhrXuOG3Mg2yJeb9LDTfjzip",
   },
   {
+    name: "Resonant Prix",
+    projectLink: "",
+    musicLink: "", 
+    description: "Resonant Union's original jazz fusion jam album inspired by racing game classics. " +
+      "Tracks were written over the course of a 12 hour time period, with live recordings done afterward.",
+    thumbnail:
+      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTmYJCu8DNntsBvhrXuOG3Mg2yJeb9LDTfjzip",
+  },
+  {
+    name: "SPEEDSTARS (Ridge Racer Arranged)",
+    projectLink: "",
+    musicLink: "", 
+    description: "Resonant Union's original jazz fusion jam album inspired by racing game classics. " +
+      "Tracks were written over the course of a 12 hour time period, with live recordings done afterward.",
+    thumbnail:
+      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTmYJCu8DNntsBvhrXuOG3Mg2yJeb9LDTfjzip",
+  },
+  {
     name: "Starweave",
     projectLink: "https://store.steampowered.com/app/2200060/STARWEAVE/",
     musicLink: "",
@@ -61,6 +79,27 @@ export const PROJECTS_INDEPENDENT_WORKS = [
   //     "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTQbhIasJrp2BtSVW86POZivbeGRLCgnEK7QD4",
   // },
   {
+    name: "voice of reason",
+    projectLink: "",
+    musicLink: "https://links.v1ris.com/voice-of-reason",
+    description: "Genre: Electropop",
+    thumbnail: "",
+  },
+  {
+    name: "BURY YOURSELF",
+    projectLink: "",
+    musicLink: "https://soundcloud.com/v1ris/bury-yourself",
+    description: "Genre: EDM, Rock",
+    thumbnail: "",
+  },
+  {
+    name: "initialize",
+    projectLink: "",
+    musicLink: "https://soundcloud.com/v1ris/initialize",
+    description: "Genre: EDM, Progressive House",
+    thumbnail: "",
+  },
+  {
     name: "Starbreak",
     projectLink: "",
     musicLink:
@@ -68,5 +107,12 @@ export const PROJECTS_INDEPENDENT_WORKS = [
     description: "Genre: EDM, Drum & Bass, Future Bass",
     thumbnail:
       "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTGn6BhmNa7NsBnw6gmpMXltky2e8vfHIGurRW",
+  },
+  {
+    name: "Beyond the Stars",
+    projectLink: "",
+    musicLink: "https://soundcloud.com/v1ris/beyond-the-stars",
+    description: "Genre: EDM, Drum & Bass",
+    thumbnail: "",
   },
 ];
