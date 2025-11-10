@@ -22,7 +22,7 @@ export default function Projects() {
             </div>{" "}
           </CardContent>
         </Card>
-          <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
+          {/* <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
               <CardContent className="px- flex flex-col gap-8">
                   <h1 className="font-AzaretMono text-shadow text-3xl font-semibold text-white sm:text-5xl">
                       Collaborative Works
@@ -33,7 +33,7 @@ export default function Projects() {
                       ))}
                   </div>{" "}
               </CardContent>
-          </Card>
+          </Card> */}
         <Card className="motion-preset-fade-lg motion-preset-slide-right-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-8 px-8">
             <h1 className="font-AzaretMono text-shadow text-3xl font-semibold text-white sm:text-5xl">
