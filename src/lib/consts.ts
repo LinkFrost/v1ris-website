@@ -23,12 +23,12 @@ export interface Project {
 
 export const PROJECTS_ORIGINAL_SOUNDTRACKS = [
   {
-    name: "Project Rope Tool",
-    projectLink: "https://xandergoodwin.itch.io/rope-tool",
+    name: "TETHERPUNK",
+    projectLink: "https://xandergoodwin.itch.io/tetherpunk",
     musicLink: "",
     description: "DIY your own spaceship to defeat an immortal space CEO.",
     thumbnail:
-      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTmYJCu8DNntsBvhrXuOG3Mg2yJeb9LDTfjzip",
+      "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTiRQHhUkXY3sb1NjIutA0FxzyBkvTUDVlod4g",
   },
   {
     name: "Starweave",
@@ -75,21 +75,21 @@ export const PROJECTS_INDEPENDENT_WORKS = [
     projectLink: "",
     musicLink: "https://links.v1ris.com/voice-of-reason",
     description: "Genre: Electropop",
-    thumbnail: "",
+    thumbnail: "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTFtww5hIc0ZPTMG4CokqhXe6LQg2a5EBdNyVW",
   },
   {
     name: "BURY YOURSELF",
     projectLink: "",
     musicLink: "https://soundcloud.com/v1ris/bury-yourself",
     description: "Genre: EDM, Rock",
-    thumbnail: "",
+    thumbnail: "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTIpbG7UOJfSa4bHtyi6U0zOV71qxlZrAeu8Fc",
   },
   {
     name: "initialize",
     projectLink: "",
     musicLink: "https://soundcloud.com/v1ris/initialize",
     description: "Genre: EDM, Progressive House",
-    thumbnail: "",
+    thumbnail: "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTalVcE3zuYT02G1WJ7kpojZzdrneDSVcFPf9w",
   },
   {
     name: "Starbreak",
@@ -105,6 +105,6 @@ export const PROJECTS_INDEPENDENT_WORKS = [
     projectLink: "",
     musicLink: "https://soundcloud.com/v1ris/beyond-the-stars",
     description: "Genre: EDM, Drum & Bass",
-    thumbnail: "",
+    thumbnail: "https://8ecxi4ukdz.ufs.sh/f/FnRUXYIc0ZPTKCtZXepTsQE5NhgxUiVOSyGqvLmzMCY7fXew",
   },
 ];

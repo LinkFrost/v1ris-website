@@ -87,7 +87,6 @@ export default async function Home() {
 
                 <CardContent className="space-y-6 p-0">
                   <p className="text-beige">
-                    a single from the forthcoming album "digital connection"
                   </p>
 
                   <div className="flex flex-col gap-3 sm:flex-row">
