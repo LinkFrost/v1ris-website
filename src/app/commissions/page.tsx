@@ -4,6 +4,70 @@ export default function Commissions() {
   return (
     <section className="responsiveContainer relative z-10 mb-8 flex w-full flex-col gap-12 pt-4">
       <div className="flex flex-col gap-4">
+      <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
+          <CardContent className="flex flex-col gap-4 px-4 sm:px-8">
+              <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
+                  Studio Violin Recording
+              </p>
+
+              <p className="text-azaret -mb-2 text-xl text-white italic">
+                  Starting at $100 per minute of music
+              </p>
+
+              <ul className="mb-4 ml-8 list-disc">
+                  <li className="text-l text-white">
+                      Layering: +$25 per minute for every 3 additional layers
+                  </li>
+
+                  <li className="text-l text-white">
+                      Part Writing: +$25 per minute if part is not written at all (no
+                      score or midi mockup)
+                  </li>
+              </ul>
+
+              <div className="flex flex-col items-center gap-8 md:flex-row">
+                  <iframe
+                      src="https://www.youtube.com/embed/videoseries?si=Tp6w_7C29wLacd5x&amp;list=PL9jHkthNBychiTvVQV97eKixjSWfCkLpp"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="aspect-video w-full max-w-[544px]"
+                  />
+
+                  <div className="flex w-full flex-col gap-4">
+                      <p className="text-xl text-white">
+                          I’d love to play violin on your project, whatever score or
+                          song it may be! I can work off of either a notated part or just MIDI.
+                      </p>
+
+                      <p className="text-white">
+                          Performed as a part of these orchestras:
+                      </p>
+
+                      <div className="flex flex-col gap-8 sm:flex-row">
+                          <img
+                              src="img/aot.jpg"
+                              alt="Attack on Titan - Beyond The Walls World Tour"
+                              className="w-full flex-1 object-cover text-shadow-black"
+                          />
+                          <img
+                              src="img/hso.png"
+                              alt="Hartford Symphony Orchestra"
+                              className="w-full flex-1 object-cover text-shadow-black"
+                          />
+                      </div>
+                  </div>
+              </div>
+
+              <a
+                  className="font-azaret mt-4 text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
+                  href="/contact"
+              >
+                  Click here to contact!
+              </a>
+          </CardContent>
+        </Card>
         <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
             <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
@@ -12,7 +76,7 @@ export default function Commissions() {
             </p>
 
             <p className="text-azaret text-xl text-white italic">
-              Starting at $150 per minute of music
+              Starting at $200 per minute of music
             </p>
 
             <ul className="mb-4 ml-8 list-disc">
@@ -61,70 +125,6 @@ export default function Commissions() {
             </a>
           </CardContent>
         </Card>
-        <Card className="motion-preset-fade-lg motion-preset-slide-left-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
-          <CardContent className="flex flex-col gap-4 px-4 sm:px-8">
-            <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
-              Studio Violin Recording
-            </p>
-
-            <p className="text-azaret -mb-2 text-xl text-white italic">
-              Starting at $100 per minute of music
-            </p>
-
-            <ul className="mb-4 ml-8 list-disc">
-              <li className="text-l text-white">
-                Layering: +$25 per minute for every 2 additional layers
-              </li>
-
-              <li className="text-l text-white">
-                Part Writing: +$25 per minute if part is not written at all (no
-                score or midi mockup)
-              </li>
-            </ul>
-
-            <div className="flex flex-col items-center gap-8 md:flex-row">
-              <iframe
-                src="https://www.youtube.com/embed/videoseries?si=Tp6w_7C29wLacd5x&amp;list=PL9jHkthNBychiTvVQV97eKixjSWfCkLpp"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                className="aspect-video w-full max-w-[544px]"
-              />
-
-              <div className="flex w-full flex-col gap-4">
-                <p className="text-xl text-white">
-                  I’d love to play violin on your project, whatever score or
-                  song it may be! I can work off of either a notated part or just MIDI.
-                </p>
-
-                <p className="text-white">
-                  Performed as a part of these orchestras:
-                </p>
-
-                <div className="flex flex-col gap-8 sm:flex-row">
-                  <img
-                    src="img/aot.jpg"
-                    alt="Attack on Titan - Beyond The Walls World Tour"
-                    className="w-full flex-1 object-cover text-shadow-black"
-                  />
-                  <img
-                    src="img/hso.png"
-                    alt="Hartford Symphony Orchestra"
-                    className="w-full flex-1 object-cover text-shadow-black"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <a
-              className="font-azaret mt-4 text-lg font-semibold text-blue-200 italic underline text-shadow-black hover:text-blue-400 sm:text-3xl"
-              href="/contact"
-            >
-              Click here to contact!
-            </a>
-          </CardContent>
-        </Card>
         <Card className="motion-preset-fade-lg motion-preset-slide-right-sm motion-duration-1000 border-slate-500 bg-gray-900/65 backdrop-blur-sm">
           <CardContent className="flex flex-col gap-4 px-8">
             <p className="text-azaret text-2xl font-semibold text-white sm:text-3xl">
@@ -132,7 +132,7 @@ export default function Commissions() {
             </p>
 
             <p className="text-azaret text-xl text-white italic">
-              Starting at $100 per minute of music
+              Starting at $150 per minute of music
             </p>
 
             <ul className="mb-4 ml-8 list-disc">

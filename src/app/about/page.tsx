@@ -22,22 +22,16 @@ export default function About() {
               <div className="flex-1 space-y-6 text-center lg:text-left">
                 <div className="space-y-6 text-left text-slate-200">
                   <p>
-                    Hi! When I’m not going by the name v1ris, my name is Anna
-                    Iris Hill. I was born in Canada, and I'm currently based in
-                    Rochester, New York.
+                    Anna Iris Hill, also known as v1ris, is a violinist and composer currently based in Rochester, New York.
                   </p>
-
                   <p>
-                    I wear a lot of hats, but my big ones are as a
-                    composer/music producer/songwriter and violinist/vocalist. I
-                    also play guitar, bass, and keyboard.
+                    She is writing the soundtrack for TETHERPUNK, a 2D physics-driven action-adventure game, and was an arranger for Chicory: A Musical Tale, the 
+                    official arrangement album of Chicory: A Colorful Tale made in collaboration with Lena Raine, Wishes Unlimited and Resonant Union. 
                   </p>
-
                   <p>
-                    Besides music, I’m a writer and programmer as well; I've
-                    written for and made games in Unity and Gamemaker, and I
-                    have experience implementing music in them both in-engine
-                    and through middleware such as FMOD and Wwise.
+                    Her violin performances have been featured in the works of peak divide (UNBEATABLE), Alohaii, DM DOKURO, vally.exe/SoundCirclet, 
+                    and in arrangements part of Chicory: A Musical Tale. She is also the violinist for the band “fabula nova” and has performed live 
+                    with the Attack on Titan: Beyond the Walls World Tour orchestra. 
                   </p>
                 </div>
               </div>

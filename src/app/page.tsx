@@ -57,10 +57,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
       <section className="py-8">
         <div className="responsiveContainer flex flex-col gap-8">
-          <Card className="motion-preset-fade-lg motion-preset-slide-up-lg motion-duration-1800 mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
+          {/* <Card className="motion-preset-fade-lg motion-preset-slide-up-lg motion-duration-1800 mx-auto overflow-hidden border-slate-500 bg-gray-900/90 backdrop-blur-sm">
             <p className="font-azaretmono text-shadow -mb-8 ml-8 text-5xl font-semibold text-white">
               New Releases
             </p>
@@ -100,7 +99,7 @@ export default async function Home() {
                 </CardContent>
               </div>
             </div>
-          </Card>
+          </Card> */}
         </div>
       </section>
     </div>
