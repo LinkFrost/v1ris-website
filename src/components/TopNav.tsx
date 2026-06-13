@@ -23,6 +23,7 @@ import { BlueSkyIcon } from "./svg/BlueSky";
 import { SoundcloudIcon } from "./svg/Soundcloud";
 import { SpotifyIcon } from "./svg/Spotify";
 import { InstagramIcon } from "./svg/Instagram";
+import { YouTubeIcon } from "./svg/YouTube";
 
 const NavLink = ({
   href,
@@ -44,7 +45,7 @@ const NavLink = ({
     >
       <Link href={href} passHref>
         <span
-          className={`font-azaretmono text-xl font-semibold hover:scale-110 hover:border-b-4 hover:border-indigo-300 hover:text-gray-300 ${isActive ? "border-b-4 border-indigo-300 font-bold text-white" : "text-white"}`}
+          className={`font-azaretmono text-lg font-semibold hover:scale-110 hover:border-b-4 hover:border-indigo-300 hover:text-gray-300 ${isActive ? "border-b-4 border-indigo-300 font-bold text-white" : "text-white"}`}
           onClick={handleClick}
         >
           {name}
@@ -93,6 +94,15 @@ export const TopNav = () => {
         </div>
 
         <div className="motion-preset-slide-left hidden items-center justify-center gap-4 lg:flex">
+          <Link
+            className="text-[#a3b3ff] hover:scale-125"
+            href="https://www.youtube.com/channel/UCbG9wrFYT8cjEuzCNcASnmA"
+            target="_blank"
+            aria-label="soundcloud"
+          >
+            <YouTubeIcon />
+          </Link>
+
           <Link
             className="text-[#a3b3ff] hover:scale-125"
             href="https://soundcloud.com/v1ris"
@@ -194,6 +204,15 @@ export const TopNav = () => {
             </div>
 
             <div className="mt-4 flex items-center justify-center gap-4">
+              <Link
+                className="text-[#a3b3ff] hover:scale-125 hover:cursor-grab"
+                href="https://www.youtube.com/channel/UCbG9wrFYT8cjEuzCNcASnmA"
+                target="_blank"
+                aria-label="youtube"
+              >
+                <YouTubeIcon />
+              </Link>
+
               <Link
                 className="text-[#a3b3ff] hover:scale-125 hover:cursor-grab"
                 href="https://soundcloud.com/v1ris"
