@@ -43,9 +43,7 @@ export default async function Home() {
               <span className="font-telma text-shadow text-4xl font-semibold text-indigo-300">
                 v1ris
               </span>
-              , a composer writing interactive music for narrative-driven games.
-              I use my multi-instrumental and electronic background to write a
-              wide variety of memorable music.
+              , a composer, arranger and violinist with a passion for working on a wide variety of projects, including video games and beyond.
             </p>
 
             <a
